@@ -1,0 +1,155 @@
+<ii:GeometryCollection
+        xmlns:gml="http://www.opengis.net/gml/3.2"
+        xmlns:ii="http://www.interactive-instruments.de/test"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <!-- 
+
+"Member with @gml:id Mem.1 - envelope: 0 0 5 10"
+"Member with @gml:id Mem.2 - envelope: 0.5 0 0.5 0"
+"Member with @gml:id Mem.3 - envelope: 5 0 5 5"
+"Member with @gml:id Mem.4 - envelope: 5 5 5 10"
+"Member with @gml:id Mem.5 - envelope: 5 0 10 5"
+"Member with @gml:id Mem.6 - envelope: 5 10 10 10"
+"Member with @gml:id Mem.7 - envelope: 5 5 10.1 5"
+"Member with @gml:id Mem.8 - envelope: 5 5 10 5"
+"Member with @gml:id Mem.9 - envelope: 0 0 10 10"
+"Member with @gml:id Mem.10 - envelope: 0 0 5.1 10"
+"Member with @gml:id Mem.11 - envelope: 5 0 10 10"
+"Member with @gml:id Mem.12 - envelope: 5 0 10 5"
+"Member with @gml:id Mem.13 - envelope: 5 5 10 10"
+
+ -->
+    <gml:boundedBy>
+        <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/5555">
+            <gml:lowerCorner>0 0 0</gml:lowerCorner>
+            <gml:upperCorner>10 10 10</gml:upperCorner>
+        </gml:Envelope>
+    </gml:boundedBy>
+    <ii:member gml:id="Mem.1">
+        <gml:LineString gml:id="ID.1.1">
+            <gml:posList>5 10 1 0 10 1 0 0 1 5 0 1</gml:posList>
+        </gml:LineString>
+    </ii:member>
+    <ii:member gml:id="Mem.2">
+        <gml:Point gml:id="Point_2" srsName="urn:ogc:def:crs:epsg:4979">
+            <gml:pos>0.5 0 0</gml:pos>
+        </gml:Point>
+    </ii:member>
+    <ii:member gml:id="Mem.3">
+        <gml:LineString gml:id="ID.2.1.1">
+            <gml:posList>5 0 1 5 5 1</gml:posList>
+        </gml:LineString>
+    </ii:member>
+    <ii:member gml:id="Mem.4">
+        <gml:LineString gml:id="ID.2.2.1">
+            <gml:posList>5 5 1 5 10 1</gml:posList>
+        </gml:LineString>
+    </ii:member>
+    <ii:member gml:id="Mem.5">
+        <gml:LineString gml:id="ID.3.1.1">
+            <gml:posList>5 0 1 10 0 1 10 5 1</gml:posList>
+        </gml:LineString>
+    </ii:member>
+    <ii:member gml:id="Mem.6">
+        <gml:LineString gml:id="ID.3.2.1"
+        >
+            <gml:posList>5 10 1 10 10 1 5 10 1</gml:posList>
+        </gml:LineString>
+    </ii:member>
+    <ii:member gml:id="Mem.7">
+        <gml:LineString gml:id="ID.4.1"
+        >
+            <gml:posList>5 5 1 10.1 5 1</gml:posList>
+        </gml:LineString>
+    </ii:member>
+    <ii:member gml:id="Mem.8">
+        <gml:LineString gml:id="ID.5.1"
+        >
+            <gml:posList>5 5 1 10 5 1</gml:posList>
+        </gml:LineString>
+    </ii:member>
+    <ii:member gml:id="Mem.9">
+        <gml:MultiSurface gml:id="NC.1.1"
+        >
+            <gml:surfaceMember>
+                <gml:Polygon gml:id="NC.1.1.1">
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>0 0 1 10 0 1 10 10 1 0 10 1 0 0 1</gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+            </gml:surfaceMember>
+        </gml:MultiSurface>
+    </ii:member>
+    <ii:member gml:id="Mem.10">
+        <gml:MultiSurface gml:id="NC.2.1.1"
+        >
+            <gml:surfaceMember>
+                <gml:Polygon gml:id="NC.2.1.1.1">
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>0 0 1 5.1 0 1 5 10 1 0 10 1 0 0 1</gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+            </gml:surfaceMember>
+        </gml:MultiSurface>
+    </ii:member>
+    <ii:member gml:id="Mem.11">
+        <gml:MultiSurface gml:id="NC.2.2.1">
+            <gml:surfaceMember>
+                <gml:Polygon gml:id="NC.2.2.1.1">
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>5 0 1 10 0 1 10 10 1 5 10 1 5 0 1</gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+            </gml:surfaceMember>
+        </gml:MultiSurface>
+    </ii:member>
+    <ii:member gml:id="Mem.12">
+        <gml:MultiSurface gml:id="NC.3.1.1">
+            <gml:surfaceMember>
+                <gml:Polygon gml:id="NC.3.1.1.1">
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>5 0 1 10 0 1 10 5 1 5 5 1 5 0 1</gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+            </gml:surfaceMember>
+        </gml:MultiSurface>
+    </ii:member>
+    <ii:member gml:id="Mem.13">
+        <gml:MultiSurface gml:id="NC.3.2.1">
+            <gml:surfaceMember>
+                <gml:Polygon gml:id="NC.3.2.1.1">
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>10 5 1 10 10 1 5 10 1 5 5 1 10 5 1</gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+            </gml:surfaceMember>
+        </gml:MultiSurface>
+    </ii:member>
+    <ii:member gml:id="Mem.14">
+        <gml:CompositeCurve gml:id="NC.4.1">
+            <gml:curveMember>
+                <gml:Curve gml:id="NC.4.1.1">
+                    <gml:segments>
+                        <gml:LineStringSegment>
+                            <gml:posList>577264 5602157 1 577276 5602155 1</gml:posList>
+                        </gml:LineStringSegment>
+                        <gml:LineStringSegment>
+                            <gml:posList>577276 5602155 1 577288 5602155 1</gml:posList>
+                        </gml:LineStringSegment>
+                    </gml:segments>
+                </gml:Curve>
+            </gml:curveMember>
+        </gml:CompositeCurve>
+    </ii:member>
+</ii:GeometryCollection>

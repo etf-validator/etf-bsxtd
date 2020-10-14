@@ -1,0 +1,4 @@
+<test_checkMinimumSeparationOfCircleControlPoints>
+  <test geom="S1">passed</test>
+  <test geom="S2">failed</test>
+</test_checkMinimumSeparationOfCircleControlPoints>

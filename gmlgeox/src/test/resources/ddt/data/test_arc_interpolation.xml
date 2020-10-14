@@ -1,0 +1,67 @@
+<ii:GeometryCollection xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:ii="http://www.interactive-instruments.de/test" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <gml:boundedBy>
+  <gml:Envelope srsName="urn:adv:crs:DE_DHDN_3GK3_BW100">
+   <gml:lowerCorner>0 0 0</gml:lowerCorner>
+   <gml:upperCorner>10 10 10</gml:upperCorner>
+  </gml:Envelope>
+ </gml:boundedBy>
+ <ii:member gml:id="GK_DEBWLT010000r2HW">
+  <gml:CompositeCurve gml:id="BZDC" srsName="urn:adv:crs:DE_DHDN_3GK3_BW100">
+   <gml:curveMember>
+    <gml:Curve gml:id="BZDD">
+     <gml:segments>
+      <gml:Arc>
+       <gml:posList>565405.930 5409722.460 565405.916 5409723.535 565406.510 5409724.430</gml:posList>
+      </gml:Arc>
+      <gml:LineStringSegment>
+       <gml:posList>565406.510 5409724.430 565407.480 5409725.180 565413.110 5409729.540 565428.980 5409742.750 565446.050 5409758.470 565461.780 5409774.210 565475.160 5409788.890 565492.200 5409809.160 565505.470 5409826.280 565513.640 5409835.980 565516.740 5409834.410</gml:posList>
+      </gml:LineStringSegment>
+     </gml:segments>
+    </gml:Curve>
+   </gml:curveMember>
+  </gml:CompositeCurve>
+ </ii:member>
+ <ii:member gml:id="GK_DEBWLT010000r2HX">
+  <gml:CompositeCurve gml:id="BZDE" srsName="urn:adv:crs:DE_DHDN_3GK3_BW100">
+   <gml:curveMember>
+    <gml:Curve gml:id="BZDF">
+     <gml:segments>
+      <gml:LineStringSegment>
+       <gml:posList>565516.740 5409834.410 565517.800 5409824.140 565484.360 5409779.760 565467.710 5409768.540 565451.370 5409752.990 565433.990 5409736.460 565416.170 5409725.990 565405.930 5409722.460</gml:posList>
+      </gml:LineStringSegment>
+     </gml:segments>
+    </gml:Curve>
+   </gml:curveMember>
+  </gml:CompositeCurve>
+ </ii:member>
+ <ii:member gml:id="BOE_DEBWLT010000r2HA">
+  <gml:Surface srsName="urn:adv:crs:DE_DHDN_3GK3_BW100" gml:id="BZBF">
+   <gml:patches>
+    <gml:PolygonPatch>
+     <gml:exterior>
+      <gml:Ring>
+       <gml:curveMember>
+        <gml:Curve gml:id="BZBG">
+         <gml:segments>
+          <gml:LineStringSegment>
+           <gml:posList>565405.930 5409722.460 565416.170 5409725.990 565433.990 5409736.460 565451.370 5409752.990 565467.710 5409768.540 565484.360 5409779.760 565517.800 5409824.140 565516.740 5409834.410 565513.640 5409835.980 565505.470 5409826.280 565492.200 5409809.160 565475.160 5409788.890 565461.780 5409774.210 565446.050 5409758.470 565428.980 5409742.750 565413.110 5409729.540 565407.480 5409725.180 565406.510 5409724.430</gml:posList>
+          </gml:LineStringSegment>
+         </gml:segments>
+        </gml:Curve>
+       </gml:curveMember>
+       <gml:curveMember>
+        <gml:Curve gml:id="BZBH">
+         <gml:segments>
+          <gml:Arc>
+           <gml:posList>565406.510 5409724.430 565405.916 5409723.535 565405.930 5409722.460</gml:posList>
+          </gml:Arc>
+         </gml:segments>
+        </gml:Curve>
+       </gml:curveMember>
+      </gml:Ring>
+     </gml:exterior>
+    </gml:PolygonPatch>
+   </gml:patches>
+  </gml:Surface>
+ </ii:member>
+</ii:GeometryCollection>

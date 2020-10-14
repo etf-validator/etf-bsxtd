@@ -1,0 +1,5 @@
+<test_checkSecondControlPointInMiddleThirdOfArc>
+  <test geom="CC1">passed</test>
+  <test geom="CC2">passed</test>
+  <test geom="CC3">failed</test>
+</test_checkSecondControlPointInMiddleThirdOfArc>

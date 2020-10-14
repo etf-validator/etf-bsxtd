@@ -1,0 +1,82 @@
+///////////////////////////////////////////////////////////////////////////////////////
+//
+// ETF-BsxTD Bridge
+//
+///////////////////////////////////////////////////////////////////////////////////////
+
+
+group = 'de.interactive_instruments.etf.testdriver.bsxm'
+description = "ETF BaseX test driver bridge"
+
+dependencies {
+	compileOnly group: 'org.basex', name: 'basex', version: basexVersion
+}
+
+def dependencyLibs = configurations.runtime + configurations.compile -
+		configurations.compile.filter { it.name.startsWith('basex') } -
+		configurations.compile.filter { it.name.startsWith('xerces') } -
+		configurations.compile.filter { it.name.startsWith('jcl') } -
+		configurations.compile.filter { it.name.startsWith('commons-fileupload') } -
+		configurations.compile.filter { it.name.startsWith('xml-apis') } -
+		configurations.compile.filter { it.name.startsWith('xmldb-api') } -
+		configurations.compile.filter { it.name.startsWith('jaxb') } -
+		configurations.compile.filter { it.name.startsWith('slf4j-log4j12') } -
+		configurations.compile.filter { it.name.startsWith('milton') }
+
+jar {
+	archiveName = "etf-extensions.jar"
+}
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+	classifier = 'javadoc'
+	from javadoc.destinationDir
+}
+
+
+task xar(type: Jar) {
+	dependsOn = ["generateBaseXPackagingFile", "jar"]
+	doFirst {
+		manifest {
+			attributes(
+					jar.manifest.getAttributes()
+			)
+		}
+	}
+	group = 'build'
+	archiveName = 'etf-extensions.xar'
+	extension = 'xar'
+	into('etf-bridge') {
+		from jar
+		from dependencyLibs
+		from file("$projectDir/src/main/xquery/ReusableResource.xq")
+		from file("$projectDir/src/main/xquery/Isolate.xq")
+		from file("$projectDir/src/main/xquery/Parameter.xq")
+	}
+
+	into('') {
+		from file("$projectDir/src/packaging/expath-pkg.xml")
+		filter{ it.replaceAll('@@libVersion@@', project.version)}
+	}
+	from file("$buildDir/generated/basex.xml")
+}
+
+task ('generateBaseXPackagingFile') {
+	doLast {
+		def dependencies = dependencyLibs.collect{c -> ('<jar>'+c.name+'</jar>')}
+
+		new File("$buildDir/generated").mkdir()
+		new File("$buildDir/generated", "basex.xml").text = """\
+			<package xmlns="http://www.basex.org/modules/pkg">
+				<jar>etf-extensions.jar</jar>
+				${dependencies.join(System.getProperty("line.separator"))}
+                <class>de.interactive_instruments.etf.bsxm.ReusableResource</class>
+            </package>"""
+	}
+}
+
+artifacts {
+	xarFile xar
+	archives xar
+}
+
+xar.mustRunAfter jar

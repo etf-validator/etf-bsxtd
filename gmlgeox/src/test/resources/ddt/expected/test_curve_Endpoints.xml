@@ -1,0 +1,8 @@
+<test_curveEndPoints>
+  <test geom="c1">POINT (1 1.5), POINT (2 2.5)</test>
+  <test geom="c2">POINT (3 3), POINT (5 5)</test>
+  <test geom="c3">POINT (6 1), POINT (8 1)</test>
+  <test geom="c4">POINT (10 10), POINT (10 10)</test>
+  <test geom="p1"/>
+  <test geom="s1"/>
+</test_curveEndPoints>

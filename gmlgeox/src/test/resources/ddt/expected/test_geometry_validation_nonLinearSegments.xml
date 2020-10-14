@@ -1,0 +1,30 @@
+<!--
+  ~ Copyright 2010-2020 interactive instruments GmbH
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<validationtest>
+  <test>
+    <valid>false</valid>
+    <result>FFVF</result>
+    <messages>
+      <etf:message xmlns:etf="http://www.interactive-instruments.de/etf/2.0" ref="TR.gmlgeox.validation.geometry.non.linear.segment">
+        <etf:argument token="original">Cannot determine control points for curve, contains non-linear segments.</etf:argument>
+        <etf:argument token="ID">NL1</etf:argument>
+        <etf:argument token="context">Surface</etf:argument>
+        <etf:argument token="coordinates">477869.281,5662296.296 477736.255,5662467.424</etf:argument>
+      </etf:message>
+    </messages>
+  </test>
+</validationtest>

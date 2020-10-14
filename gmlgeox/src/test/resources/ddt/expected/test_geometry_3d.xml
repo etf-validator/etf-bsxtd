@@ -1,0 +1,44 @@
+<test_3d>
+  <validationtest>
+    <test id="Point_1">
+      <valid>true</valid>
+      <result>VVVV</result>
+      <messages/>
+    </test>
+    <test id="Point_2">
+      <valid>true</valid>
+      <result>VVVV</result>
+      <messages/>
+    </test>
+    <test id="Curve_1">
+      <valid>true</valid>
+      <result>VVVV</result>
+      <messages/>
+    </test>
+    <test id="Surface">
+      <valid>true</valid>
+      <result>VVVV</result>
+      <messages/>
+    </test>
+  </validationtest>
+  <relationshiptest>
+    <tests>
+      <test_nodenode geom1="Point_1" geom2="Curve_1">
+        <intersects>true</intersects>
+      </test_nodenode>
+      <test_geomgeom geom1="Point_1" geom2="Curve_1">
+        <intersects>true</intersects>
+      </test_geomgeom>
+    </tests>
+  </relationshiptest>
+  <relationshiptest>
+    <tests>
+      <test_nodenode geom1="Point_2" geom2="Curve_S1">
+        <intersects>true</intersects>
+      </test_nodenode>
+      <test_geomgeom geom1="Point_2" geom2="Curve_S1">
+        <intersects>true</intersects>
+      </test_geomgeom>
+    </tests>
+  </relationshiptest>
+</test_3d>

@@ -1,2 +1,6 @@
 rootProject.name = 'etf-bsxtd'
+include 'gmlgeox'
+include 'testdriver-bridge'
+include 'testdriver'
+include 'testdriver-legacy'
 gradle.ext.set('ii.license.header', 'eupl-12-license-eu-ii-copy')

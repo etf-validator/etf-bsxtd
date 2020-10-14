@@ -1,0 +1,22 @@
+<package xmlns="http://expath.org/ns/pkg"
+         name="ETF BaseX bridge"
+         abbrev="etf-bridge"
+         version="@@libVersion@@"
+         spec="1.0">
+
+    <title>ETF BaseX bridge</title>
+    <dependency processor="basex"/>
+    <xquery>
+        <namespace>https://modules.etf-validator.net/reusableresources/1</namespace>
+        <file>ReusableResource.xq</file>
+    </xquery>
+    <xquery>
+        <namespace>https://modules.etf-validator.net/isolate-data/1</namespace>
+        <file>Isolate.xq</file>
+    </xquery>
+    <xquery>
+        <namespace>https://modules.etf-validator.net/parameter/1</namespace>
+        <file>Parameter.xq</file>
+    </xquery>
+
+</package>

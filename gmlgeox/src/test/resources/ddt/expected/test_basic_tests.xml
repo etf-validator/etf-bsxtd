@@ -1,0 +1,20 @@
+<validationtest>
+  <test1>true false false false true false true false false true true false false false false false</test1>
+  <test2>false false true false false false false false false false false true true true true true true false false false false false false true false false false false false false false false false false false false false true true</test2>
+  <test3>false false false true false false false false false false false true true true true true true false false false false false false true false false false false false false false false false false false false false true true</test3>
+  <test4>true true true false false false false false true false true false false true true true true true false false false false false false true true false false false false true false false false false false true</test4>
+  <test5>false false true false false false true true false false false true true true true true false false false false false false false false true false false false false false false false false false false false true true true true</test5>
+  <test6>false false false true false true false false false false false false false false true false true true true false false false false true false false false true false true false</test6>
+  <test7>false true</test7>
+  <test8>false true</test8>
+  <test9>VVVV VVVV VVVV</test9>
+  <test10>FSSS FSSS</test10>
+  <test11>VVFV VVFV VVVV</test11>
+  <test12>VFVV</test12>
+  <test13>VFVV</test13>
+  <test14>VVVV</test14>
+  <test15>VFVV</test15>
+  <test16>MULTIPOINT ((0 0), (1 1))</test16>
+  <test17>13 13 true true 1</test17>
+  <test18>FVVV</test18>
+</validationtest>

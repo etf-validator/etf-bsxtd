@@ -1,0 +1,81 @@
+<ii:GeometryCollection
+        xmlns:gml="http://www.opengis.net/gml/3.2"
+        xmlns:ii="http://www.interactive-instruments.de/test"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <gml:boundedBy>
+        <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/5555">
+            <gml:lowerCorner>0 0 0</gml:lowerCorner>
+            <gml:upperCorner>10 10 10</gml:upperCorner>
+        </gml:Envelope>
+    </gml:boundedBy>
+    <ii:member gml:id="Mem.1">
+        <gml:MultiSurface gml:id="MS.1"
+        >
+            <gml:surfaceMember>
+                <gml:Polygon gml:id="MS.1.1">
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>0 0 1 10 0 1 10 10 1 0 10 1 0 0 1</gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+            </gml:surfaceMember>
+        </gml:MultiSurface>
+    </ii:member>
+    <ii:member gml:id="Mem.2">
+        <gml:MultiSurface gml:id="MS.2"
+        >
+            <gml:surfaceMember>
+                <gml:Polygon gml:id="MS.2.1">
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>0 0 1 5.1 0 1 5 10 1 0 10 1 0 0 1</gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+            </gml:surfaceMember>
+        </gml:MultiSurface>
+    </ii:member>
+    <ii:member gml:id="Mem.3">
+        <gml:MultiSurface gml:id="MS.3"
+        >
+            <gml:surfaceMember>
+                <gml:Polygon gml:id="MS.3.1">
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>5 0 1 10 0 1 10 10 1 5 10 1 5 0 1</gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+            </gml:surfaceMember>
+        </gml:MultiSurface>
+    </ii:member>
+    <ii:member gml:id="Mem.4">
+        <gml:MultiSurface gml:id="MS.4"
+        >
+            <gml:surfaceMember>
+                <gml:Polygon gml:id="MS.4.1">
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>5 0 1 10 0 1 10 5 1 5 5 1 5 0 1</gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+            </gml:surfaceMember>
+        </gml:MultiSurface>
+    </ii:member>
+    <ii:member gml:id="Mem.5">
+        <gml:MultiSurface gml:id="MS.5">
+            <gml:surfaceMember>
+                <gml:Polygon gml:id="MS.5.1">
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>10 5 1 10 10 1 5 10 1 5 5 1 10 5 1</gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+            </gml:surfaceMember>
+        </gml:MultiSurface>
+    </ii:member>    
+</ii:GeometryCollection>

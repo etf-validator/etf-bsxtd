@@ -1,0 +1,49 @@
+<ii:GeometryCollection xmlns:gml="http://www.opengis.net/gml/3.2"
+ xmlns:ii="http://www.interactive-instruments.de/test" xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <gml:boundedBy>
+  <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+   <gml:lowerCorner>0 0</gml:lowerCorner>
+   <gml:upperCorner>90 90</gml:upperCorner>
+  </gml:Envelope>
+ </gml:boundedBy>
+ <ii:member>
+  <gml:CompositeCurve gml:id="CC1" srsName="urn:adv:crs:etrs89_utm33">
+   <gml:curveMember>
+    <gml:Curve gml:id="CC1.2">
+     <gml:segments>
+      <gml:Arc numArc="1">
+       <gml:posList>-1 0 0 -1 0 1</gml:posList>
+      </gml:Arc>
+     </gml:segments>
+    </gml:Curve>
+   </gml:curveMember>
+  </gml:CompositeCurve>
+ </ii:member>
+ <ii:member>
+  <gml:CompositeCurve gml:id="CC2" srsName="urn:adv:crs:etrs89_utm33">
+   <gml:curveMember>
+    <gml:Curve gml:id="CC2.2">
+     <gml:segments>
+      <gml:ArcString numArc="1">
+       <gml:posList>-1 0 0 -1 1 0 1 1 2 0</gml:posList>
+      </gml:ArcString>
+     </gml:segments>
+    </gml:Curve>
+   </gml:curveMember>
+  </gml:CompositeCurve>
+ </ii:member>
+ <ii:member>
+  <gml:CompositeCurve gml:id="CC3" srsName="urn:adv:crs:etrs89_utm33">
+   <gml:curveMember>
+    <gml:Curve gml:id="CC3.2">
+     <gml:segments>
+      <gml:ArcString numArc="1">
+       <gml:posList>-10 0 -9 1 10 0</gml:posList>
+      </gml:ArcString>
+     </gml:segments>
+    </gml:Curve>
+   </gml:curveMember>
+  </gml:CompositeCurve>
+ </ii:member>
+</ii:GeometryCollection>

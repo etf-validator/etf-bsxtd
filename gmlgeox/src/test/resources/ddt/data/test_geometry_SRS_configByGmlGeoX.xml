@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ii:GeometryCollection
+ xmlns:gml="http://www.opengis.net/gml/3.2"
+ xmlns:ii="http://www.interactive-instruments.de/test"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <gml:boundedBy>
+  <gml:Envelope
+   srsName="http://www.opengis.net/def/crs/epsg/0/5555"/>
+ </gml:boundedBy>
+ <ii:member>
+  <gml:Curve
+   gml:id="Curve_1">
+   <gml:segments>
+    <gml:LineStringSegment
+     interpolation="linear">
+     <gml:posList>0 0 0 1 1 1 1 4 1 0 4 1 0 0 0</gml:posList>
+    </gml:LineStringSegment>
+   </gml:segments>
+  </gml:Curve>
+ </ii:member>
+ <ii:member>
+  <gml:Curve
+   gml:id="Curve_2" srsName="http://www.opengis.net/def/crs/EPSG/0/5555">
+   <gml:segments>
+    <gml:LineStringSegment
+     interpolation="linear">
+     <gml:posList>0 0 0 0 1 0 1 1 0 1 0 0 0 0 0</gml:posList>
+    </gml:LineStringSegment>
+   </gml:segments>
+  </gml:Curve>
+ </ii:member>
+</ii:GeometryCollection>

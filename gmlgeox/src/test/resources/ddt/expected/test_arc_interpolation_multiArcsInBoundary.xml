@@ -1,0 +1,15 @@
+<test_arc_interpolation_multiArcsInBoundary>
+  <relationshiptest>
+    <tests>
+      <test_gk_in_boundary candidate="BF_DENW36AL1Nv000MT" gk="GK_DENW36AL1Nv000MV">true</test_gk_in_boundary>
+      <test_gk_in_boundary candidate="BF_DENW36AL1Nv000MT" gk="GK_DENW36AL1Nv000MU">true</test_gk_in_boundary>
+      
+      <test_gk_in_boundary candidate="BF_DENW36AL1Ku000Et" gk="GK_DENW36AL1Ku000Ep">true</test_gk_in_boundary>
+      
+      <test_gk_in_boundary candidate="BF_DENW36AL1Pa000Nw" gk="GK_DENW36AL1Pa000O9">true</test_gk_in_boundary>
+      <test_gk_in_boundary candidate="BF_DENW36AL1Pa000Nw" gk="GK_DENW36AL1Pa000OC">true</test_gk_in_boundary>
+      <test_gk_in_boundary candidate="BF_DENW36AL1Pa000Nw" gk="GK_DENW36AL1Pa000OA">true</test_gk_in_boundary>
+      <test_gk_in_boundary candidate="BF_DENW36AL1Pa000Nw" gk="GK_DENW36AL1Pa000OB">true</test_gk_in_boundary>
+    </tests>
+  </relationshiptest>
+</test_arc_interpolation_multiArcsInBoundary>

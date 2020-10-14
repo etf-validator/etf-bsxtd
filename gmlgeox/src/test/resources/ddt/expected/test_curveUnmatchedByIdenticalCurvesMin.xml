@@ -1,0 +1,7 @@
+<test_curveUnmatchedByIdenticalCurvesMin>
+  <test geom="c1">OK</test>
+  <test geom="c2">OK</test>
+  <test geom="c3">LINESTRING (4 6, 4 5, 4 4)</test>
+  <test geom="c4">LINESTRING (4.5 2, 4.5 0.5)</test>
+  <test geom="c5">OK</test>
+</test_curveUnmatchedByIdenticalCurvesMin>

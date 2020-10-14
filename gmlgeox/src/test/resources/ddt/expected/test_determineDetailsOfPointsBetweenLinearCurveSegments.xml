@@ -1,0 +1,222 @@
+<test_determineDetailsOfPointsBetweenLinearCurveSegments>
+  <test xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="Member_CompositeSurface_1_0bp_0cp"/>
+  <test xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="Member_CompositeSurface_2_2bp_1cp">
+    <bendPoint>
+      <geoxr:Point xmlns:geoxr="https://modules.etf-validator.net/gmlgeox/result">
+        <geoxr:wkt>POINT (1 0)</geoxr:wkt>
+        <geoxr:angleInDegree>90</geoxr:angleInDegree>
+        <geoxr:distance>0.7071067811865476</geoxr:distance>
+      </geoxr:Point>
+    </bendPoint>
+    <continuousPoint>
+      <geoxr:Point xmlns:geoxr="https://modules.etf-validator.net/gmlgeox/result">
+        <geoxr:wkt>POINT (1 1)</geoxr:wkt>
+        <geoxr:angleInDegree>0</geoxr:angleInDegree>
+        <geoxr:distance>0</geoxr:distance>
+      </geoxr:Point>
+    </continuousPoint>
+    <bendPoint>
+      <geoxr:Point xmlns:geoxr="https://modules.etf-validator.net/gmlgeox/result">
+        <geoxr:wkt>POINT (1 2)</geoxr:wkt>
+        <geoxr:angleInDegree>90</geoxr:angleInDegree>
+        <geoxr:distance>0.7071067811865476</geoxr:distance>
+      </geoxr:Point>
+    </bendPoint>
+  </test>
+  <test xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="Member_CompositeCurve_1_3bp_0cp">
+    <bendPoint>
+      <geoxr:Point xmlns:geoxr="https://modules.etf-validator.net/gmlgeox/result">
+        <geoxr:wkt>POINT (2 1)</geoxr:wkt>
+        <geoxr:angleInDegree>90</geoxr:angleInDegree>
+        <geoxr:distance>0.7071067811865476</geoxr:distance>
+      </geoxr:Point>
+    </bendPoint>
+    <bendPoint>
+      <geoxr:Point xmlns:geoxr="https://modules.etf-validator.net/gmlgeox/result">
+        <geoxr:wkt>POINT (2 2)</geoxr:wkt>
+        <geoxr:angleInDegree>90</geoxr:angleInDegree>
+        <geoxr:distance>0.7071067811865476</geoxr:distance>
+      </geoxr:Point>
+    </bendPoint>
+    <bendPoint>
+      <geoxr:Point xmlns:geoxr="https://modules.etf-validator.net/gmlgeox/result">
+        <geoxr:wkt>POINT (3 2)</geoxr:wkt>
+        <geoxr:angleInDegree>90</geoxr:angleInDegree>
+        <geoxr:distance>0.7071067811865476</geoxr:distance>
+      </geoxr:Point>
+    </bendPoint>
+  </test>
+  <test xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="Member_CompositeCurve_2_2bp_1cp">
+    <bendPoint>
+      <geoxr:Point xmlns:geoxr="https://modules.etf-validator.net/gmlgeox/result">
+        <geoxr:wkt>POINT (1 0)</geoxr:wkt>
+        <geoxr:angleInDegree>90</geoxr:angleInDegree>
+        <geoxr:distance>0.7071067811865476</geoxr:distance>
+      </geoxr:Point>
+    </bendPoint>
+    <continuousPoint>
+      <geoxr:Point xmlns:geoxr="https://modules.etf-validator.net/gmlgeox/result">
+        <geoxr:wkt>POINT (1 1)</geoxr:wkt>
+        <geoxr:angleInDegree>0</geoxr:angleInDegree>
+        <geoxr:distance>0</geoxr:distance>
+      </geoxr:Point>
+    </continuousPoint>
+    <bendPoint>
+      <geoxr:Point xmlns:geoxr="https://modules.etf-validator.net/gmlgeox/result">
+        <geoxr:wkt>POINT (1 2)</geoxr:wkt>
+        <geoxr:angleInDegree>90</geoxr:angleInDegree>
+        <geoxr:distance>0.7071067811865476</geoxr:distance>
+      </geoxr:Point>
+    </bendPoint>
+  </test>
+  <test xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="Member_Point1_0bp_0cp"/>
+  <test xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="Member_MultiPoint1_0bp_0cp"/>
+  <test xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="Member_Curve1_0bp_0cp"/>
+  <test xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="Member_Curve2_0bp_1cp">
+    <continuousPoint>
+      <geoxr:Point xmlns:geoxr="https://modules.etf-validator.net/gmlgeox/result">
+        <geoxr:wkt>POINT (0.000001 0.000001)</geoxr:wkt>
+        <geoxr:angleInDegree>45.000057295836825</geoxr:angleInDegree>
+        <geoxr:distance>0.000001</geoxr:distance>
+      </geoxr:Point>
+    </continuousPoint>
+  </test>
+  <test xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="Member_Curve3_0bp_1cp">
+    <continuousPoint>
+      <geoxr:Point xmlns:geoxr="https://modules.etf-validator.net/gmlgeox/result">
+        <geoxr:wkt>POINT (0.03 0.000001)</geoxr:wkt>
+        <geoxr:angleInDegree>91.71644985966859</geoxr:angleInDegree>
+        <geoxr:distance>0.03</geoxr:distance>
+      </geoxr:Point>
+    </continuousPoint>
+  </test>
+  <test xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="Member_OrientableCurve1_1bp_0cp">
+    <bendPoint>
+      <geoxr:Point xmlns:geoxr="https://modules.etf-validator.net/gmlgeox/result">
+        <geoxr:wkt>POINT (2 1)</geoxr:wkt>
+        <geoxr:angleInDegree>90</geoxr:angleInDegree>
+        <geoxr:distance>0.7071067811865476</geoxr:distance>
+      </geoxr:Point>
+    </bendPoint>
+  </test>
+  <test xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="Member_Curve2_1bp_0cp">
+    <bendPoint>
+      <geoxr:Point xmlns:geoxr="https://modules.etf-validator.net/gmlgeox/result">
+        <geoxr:wkt>POINT (2 1)</geoxr:wkt>
+        <geoxr:angleInDegree>90</geoxr:angleInDegree>
+        <geoxr:distance>0.7071067811865476</geoxr:distance>
+      </geoxr:Point>
+    </bendPoint>
+  </test>
+  <test xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="Member_Surface1_4bp_0cp">
+    <bendPoint>
+      <geoxr:Point xmlns:geoxr="https://modules.etf-validator.net/gmlgeox/result">
+        <geoxr:wkt>POINT (1 0)</geoxr:wkt>
+        <geoxr:angleInDegree>90</geoxr:angleInDegree>
+        <geoxr:distance>0.7071067811865476</geoxr:distance>
+      </geoxr:Point>
+    </bendPoint>
+    <bendPoint>
+      <geoxr:Point xmlns:geoxr="https://modules.etf-validator.net/gmlgeox/result">
+        <geoxr:wkt>POINT (1 1)</geoxr:wkt>
+        <geoxr:angleInDegree>90</geoxr:angleInDegree>
+        <geoxr:distance>0.7071067811865476</geoxr:distance>
+      </geoxr:Point>
+    </bendPoint>
+    <bendPoint>
+      <geoxr:Point xmlns:geoxr="https://modules.etf-validator.net/gmlgeox/result">
+        <geoxr:wkt>POINT (0 1)</geoxr:wkt>
+        <geoxr:angleInDegree>90</geoxr:angleInDegree>
+        <geoxr:distance>0.7071067811865476</geoxr:distance>
+      </geoxr:Point>
+    </bendPoint>
+    <bendPoint>
+      <geoxr:Point xmlns:geoxr="https://modules.etf-validator.net/gmlgeox/result">
+        <geoxr:wkt>POINT (0 0)</geoxr:wkt>
+        <geoxr:angleInDegree>90</geoxr:angleInDegree>
+        <geoxr:distance>0.7071067811865476</geoxr:distance>
+      </geoxr:Point>
+    </bendPoint>
+  </test>
+  <test xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="Member_MultiSurface1_6bp_2cp">
+    <bendPoint>
+      <geoxr:Point xmlns:geoxr="https://modules.etf-validator.net/gmlgeox/result">
+        <geoxr:wkt>POINT (1 0)</geoxr:wkt>
+        <geoxr:angleInDegree>90</geoxr:angleInDegree>
+        <geoxr:distance>0.7071067811865476</geoxr:distance>
+      </geoxr:Point>
+    </bendPoint>
+    <bendPoint>
+      <geoxr:Point xmlns:geoxr="https://modules.etf-validator.net/gmlgeox/result">
+        <geoxr:wkt>POINT (1 1)</geoxr:wkt>
+        <geoxr:angleInDegree>90</geoxr:angleInDegree>
+        <geoxr:distance>0.7071067811865476</geoxr:distance>
+      </geoxr:Point>
+    </bendPoint>
+    <bendPoint>
+      <geoxr:Point xmlns:geoxr="https://modules.etf-validator.net/gmlgeox/result">
+        <geoxr:wkt>POINT (0 1)</geoxr:wkt>
+        <geoxr:angleInDegree>90</geoxr:angleInDegree>
+        <geoxr:distance>0.7071067811865476</geoxr:distance>
+      </geoxr:Point>
+    </bendPoint>
+    <bendPoint>
+      <geoxr:Point xmlns:geoxr="https://modules.etf-validator.net/gmlgeox/result">
+        <geoxr:wkt>POINT (0 0)</geoxr:wkt>
+        <geoxr:angleInDegree>90</geoxr:angleInDegree>
+        <geoxr:distance>0.7071067811865476</geoxr:distance>
+      </geoxr:Point>
+    </bendPoint>
+    <continuousPoint>
+      <geoxr:Point xmlns:geoxr="https://modules.etf-validator.net/gmlgeox/result">
+        <geoxr:wkt>POINT (4 4)</geoxr:wkt>
+        <geoxr:angleInDegree>0</geoxr:angleInDegree>
+        <geoxr:distance>0</geoxr:distance>
+      </geoxr:Point>
+    </continuousPoint>
+    <continuousPoint>
+      <geoxr:Point xmlns:geoxr="https://modules.etf-validator.net/gmlgeox/result">
+        <geoxr:wkt>POINT (5 5)</geoxr:wkt>
+        <geoxr:angleInDegree>0</geoxr:angleInDegree>
+        <geoxr:distance>0</geoxr:distance>
+      </geoxr:Point>
+    </continuousPoint>
+    <bendPoint>
+      <geoxr:Point xmlns:geoxr="https://modules.etf-validator.net/gmlgeox/result">
+        <geoxr:wkt>POINT (3 8)</geoxr:wkt>
+        <geoxr:angleInDegree>90</geoxr:angleInDegree>
+        <geoxr:distance>2.5724787771376327</geoxr:distance>
+      </geoxr:Point>
+    </bendPoint>
+    <bendPoint>
+      <geoxr:Point xmlns:geoxr="https://modules.etf-validator.net/gmlgeox/result">
+        <geoxr:wkt>POINT (3 3)</geoxr:wkt>
+        <geoxr:angleInDegree>135</geoxr:angleInDegree>
+        <geoxr:distance>1.4142135623730951</geoxr:distance>
+      </geoxr:Point>
+    </bendPoint>
+  </test>
+  <test xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="Member_MultiCurve1_2bp_1cp">
+    <bendPoint>
+      <geoxr:Point xmlns:geoxr="https://modules.etf-validator.net/gmlgeox/result">
+        <geoxr:wkt>POINT (0 1)</geoxr:wkt>
+        <geoxr:angleInDegree>90</geoxr:angleInDegree>
+        <geoxr:distance>0.7071067811865476</geoxr:distance>
+      </geoxr:Point>
+    </bendPoint>
+    <bendPoint>
+      <geoxr:Point xmlns:geoxr="https://modules.etf-validator.net/gmlgeox/result">
+        <geoxr:wkt>POINT (5 1)</geoxr:wkt>
+        <geoxr:angleInDegree>90</geoxr:angleInDegree>
+        <geoxr:distance>1</geoxr:distance>
+      </geoxr:Point>
+    </bendPoint>
+    <continuousPoint>
+      <geoxr:Point xmlns:geoxr="https://modules.etf-validator.net/gmlgeox/result">
+        <geoxr:wkt>POINT (4 2)</geoxr:wkt>
+        <geoxr:angleInDegree>0</geoxr:angleInDegree>
+        <geoxr:distance>0</geoxr:distance>
+      </geoxr:Point>
+    </continuousPoint>
+  </test>
+</test_determineDetailsOfPointsBetweenLinearCurveSegments>

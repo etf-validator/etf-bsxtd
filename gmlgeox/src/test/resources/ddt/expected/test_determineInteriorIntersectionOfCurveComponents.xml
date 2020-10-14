@@ -1,0 +1,11 @@
+<test_determineInteriorIntersectionOfCurveComponents>
+  <test geom1="c1" geom2="c3">true</test>
+  <test geom1="c1" geom2="c2">false</test>
+  <test geom1="c2" geom2="c3">true</test>
+  <test geom1="c4" geom2="p1">true</test>
+  <test geom1="p2" geom2="p2">false</test>
+  <test geom1="p2" geom2="c4">false</test>
+  <test geom1="c5" geom2="c6">false</test>
+  <test geom1="c7" geom2="c8">false</test>
+  <test geom1="c9" geom2="c10">true</test>
+</test_determineInteriorIntersectionOfCurveComponents>

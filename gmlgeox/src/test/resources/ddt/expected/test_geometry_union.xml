@@ -1,0 +1,9 @@
+<test_union>
+  <relationshiptest>
+    <tests>
+      <test geoms="MS.2 MS.4 MS.5">
+        <isEmpty>false</isEmpty>
+      </test>
+    </tests>
+  </relationshiptest>
+</test_union>

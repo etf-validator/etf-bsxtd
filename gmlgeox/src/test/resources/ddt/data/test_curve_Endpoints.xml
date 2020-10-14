@@ -1,0 +1,110 @@
+<ii:GeometryCollection xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:ii="http://www.interactive-instruments.de/test" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <gml:boundedBy>
+  <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+   <gml:lowerCorner>0 0</gml:lowerCorner>
+   <gml:upperCorner>90 90</gml:upperCorner>
+  </gml:Envelope>
+ </gml:boundedBy>
+ <ii:member>
+  <gml:Curve gml:id="c1">
+   <gml:segments>
+    <gml:LineStringSegment>
+     <gml:posList>1 1.5 2 2.5</gml:posList>
+    </gml:LineStringSegment>
+   </gml:segments>
+  </gml:Curve>
+ </ii:member>
+ <ii:member>
+  <gml:CompositeCurve gml:id="c2">
+   <gml:curveMember>
+    <gml:Curve>
+     <gml:segments>
+      <gml:LineStringSegment>
+       <gml:posList>3 3 4 4</gml:posList>
+      </gml:LineStringSegment>
+     </gml:segments>
+    </gml:Curve>
+   </gml:curveMember>
+   <gml:curveMember>
+    <gml:Curve>
+     <gml:segments>
+      <gml:LineStringSegment>
+       <gml:posList>4 4 5 5</gml:posList>
+      </gml:LineStringSegment>
+     </gml:segments>
+    </gml:Curve>
+   </gml:curveMember>
+  </gml:CompositeCurve>
+ </ii:member>
+ <ii:member>
+  <gml:Curve gml:id="c3">
+   <gml:segments>
+    <gml:ArcString>
+     <gml:posList>6 1 7 2 8 1</gml:posList>
+    </gml:ArcString>
+   </gml:segments>
+  </gml:Curve>
+ </ii:member>
+ <ii:member>
+  <gml:Curve gml:id="c4">
+   <gml:segments>
+    <gml:LineStringSegment>
+     <gml:posList>10 10 11 11 12 10 10 10</gml:posList>
+    </gml:LineStringSegment>
+   </gml:segments>
+  </gml:Curve>
+ </ii:member>
+ <ii:member>
+  <gml:Point gml:id="p1">
+   <gml:pos>-1 -1</gml:pos>
+  </gml:Point>
+ </ii:member>
+ <ii:member>
+  <gml:Surface gml:id="s1">
+   <gml:patches>
+    <gml:PolygonPatch interpolation="planar">
+     <gml:exterior>
+      <gml:Ring>
+       <gml:curveMember>
+        <gml:Curve gml:id="s1_c1">
+         <gml:segments>
+          <gml:LineStringSegment interpolation="linear">
+           <gml:posList count="2">20 1 21 1</gml:posList>
+          </gml:LineStringSegment>
+         </gml:segments>
+        </gml:Curve>
+       </gml:curveMember>
+       <gml:curveMember>
+        <gml:Curve gml:id="s1_c2">
+         <gml:segments>
+          <gml:LineStringSegment interpolation="linear">
+           <gml:posList count="2">21 1 21 2</gml:posList>
+          </gml:LineStringSegment>
+         </gml:segments>
+        </gml:Curve>
+       </gml:curveMember>
+       <gml:curveMember>
+        <gml:Curve gml:id="s1_c3">
+         <gml:segments>
+          <gml:LineStringSegment interpolation="linear">
+           <gml:posList count="2">21 2 20 2</gml:posList>
+          </gml:LineStringSegment>
+         </gml:segments>
+        </gml:Curve>
+       </gml:curveMember>
+       <gml:curveMember>
+        <gml:Curve gml:id="s1_c4">
+         <gml:segments>
+          <gml:LineStringSegment interpolation="linear">
+           <gml:posList count="2">20 2 20 1</gml:posList>
+          </gml:LineStringSegment>
+         </gml:segments>
+        </gml:Curve>
+       </gml:curveMember>
+      </gml:Ring>
+     </gml:exterior>
+    </gml:PolygonPatch>
+   </gml:patches>
+  </gml:Surface>
+ </ii:member>
+</ii:GeometryCollection>

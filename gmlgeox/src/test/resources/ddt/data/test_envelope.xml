@@ -1,0 +1,17 @@
+<ii:GeometryCollection xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:ii="http://www.interactive-instruments.de/test" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <gml:boundedBy>
+  <gml:Envelope srsName="urn:adv:crs:ETRS89_UTM32">
+   <gml:lowerCorner>0 0</gml:lowerCorner>
+   <gml:upperCorner>10 10</gml:upperCorner>
+  </gml:Envelope>
+ </gml:boundedBy> 
+ <ii:member gml:id="M1">  
+    <gml:Curve gml:id="Curve1">
+     <gml:segments>
+      <gml:LineStringSegment>
+       <gml:posList>0 0 1 1 2 2 3 3 4 4 5 5 6 6 7 7 8 8 9 9 10 10</gml:posList>
+      </gml:LineStringSegment>
+     </gml:segments>
+    </gml:Curve>
+ </ii:member> 
+</ii:GeometryCollection>

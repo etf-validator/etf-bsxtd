@@ -1,0 +1,34 @@
+<ii:GeometryCollection xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:ii="http://www.interactive-instruments.de/test" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <gml:boundedBy>
+  <gml:Envelope srsName="urn:adv:crs:DE_DHDN_3GK3_BW100">
+   <gml:lowerCorner>0 0 0</gml:lowerCorner>
+   <gml:upperCorner>10 10 10</gml:upperCorner>
+  </gml:Envelope>
+ </gml:boundedBy> 
+ <ii:member gml:id="Member_1">
+  <gml:OrientableCurve gml:id="OrientableCurve_1" orientation="+">
+   <gml:baseCurve>
+    <gml:Curve>
+     <gml:segments>
+      <gml:Arc>
+       <gml:posList>565406.510 5409724.430 565405.916 5409723.535 565405.930 5409722.460</gml:posList>
+      </gml:Arc>
+     </gml:segments>
+    </gml:Curve>
+   </gml:baseCurve>
+  </gml:OrientableCurve>
+ </ii:member>
+ <ii:member gml:id="Member_2">
+  <gml:OrientableCurve gml:id="OrientableCurve_2" orientation="-">
+   <gml:baseCurve>
+    <gml:Curve>
+     <gml:segments>
+      <gml:Arc>
+       <gml:posList>565405.930 5409722.460 565405.916 5409723.535 565406.510 5409724.430</gml:posList>
+      </gml:Arc>
+     </gml:segments>
+    </gml:Curve>
+   </gml:baseCurve>
+  </gml:OrientableCurve>
+ </ii:member>
+</ii:GeometryCollection>

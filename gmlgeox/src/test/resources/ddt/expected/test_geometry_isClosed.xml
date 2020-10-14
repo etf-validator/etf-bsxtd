@@ -1,0 +1,48 @@
+<validationtest>
+  <isClosed_forCurvesOnly>
+    <test gmlid="Point">
+      <isClosed>true</isClosed>
+    </test>
+    <test gmlid="MultiPoint">
+      <isClosed>true</isClosed>
+    </test>
+    <test gmlid="Curve_notClosed">
+      <isClosed>false</isClosed>
+    </test>
+    <test gmlid="Curve_closed">
+      <isClosed>true</isClosed>
+    </test>
+    <test gmlid="MultiCurve_notClosed">
+      <isClosed>false</isClosed>
+    </test>
+    <test gmlid="MultiCurve_closed">
+      <isClosed>true</isClosed>
+    </test>
+    <test gmlid="Surface">
+      <isClosed>true</isClosed>
+    </test>
+  </isClosed_forCurvesOnly>
+  <isClosed_forAllGeometryTypes>
+    <test gmlid="Point">
+      <isClosed>true</isClosed>
+    </test>
+    <test gmlid="MultiPoint">
+      <isClosed>true</isClosed>
+    </test>
+    <test gmlid="Curve_notClosed">
+      <isClosed>false</isClosed>
+    </test>
+    <test gmlid="Curve_closed">
+      <isClosed>true</isClosed>
+    </test>
+    <test gmlid="MultiCurve_notClosed">
+      <isClosed>false</isClosed>
+    </test>
+    <test gmlid="MultiCurve_closed">
+      <isClosed>true</isClosed>
+    </test>
+    <test gmlid="Surface">
+      <isClosed>false</isClosed>
+    </test>
+  </isClosed_forAllGeometryTypes>
+</validationtest>

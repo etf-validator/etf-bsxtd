@@ -1,25 +1,27 @@
 ///////////////////////////////////////////////////////////////////////////////////////
 //
-// ETF-BsxTD
+// ETF-BSXTD
 //
 ///////////////////////////////////////////////////////////////////////////////////////
 
 buildscript {
-	repositories {
-		maven {
-			url "https://services.interactive-instruments.de/etfdev-af/plugins-releases-local"
-			credentials {
-				// Our repository requires authenticating
-				username 'ii-bda'
-				password 'AP7mb4WA6F1ckdZkaE8Qx8GSowt'
-			}}
-	}
-	dependencies {
-		classpath group: 'de.interactive_instruments.bda', name: 'etf-bda', version: '[1.0.29,1.0.99]'
-	}
-	dependencies {
-		ant.unjar src: configurations.classpath.files.find {it.path.contains('etf')}, dest: 'build/gradle'
-	}
+    repositories {
+        maven {
+            url "https://af.etf.interactive-instruments.de/repository/gradle-plugins"
+            credentials {
+                username 'ii-bda'
+                password 'AP7mb4WA6F1ckdZkaE8Qx8GSowt'
+            }}
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath group: 'de.interactive_instruments.bda', name: 'etf-bda', version: '[2.0.17,2.0.99]'
+    }
+    dependencies {
+        ant.unjar src: configurations.classpath.files.find { it.path.contains('etf') }, dest: 'build/gradle'
+    }
 }
 apply from: 'build/gradle/ii-bda.gradle'
 
@@ -28,166 +30,58 @@ apply from: 'build/gradle/ii-bda.gradle'
 group = 'de.interactive_instruments.etf.testdriver'
 description = "ETF BaseX test driver"
 
-ext.testDeploymentDir = project.file('./build/tmp/td')
-
-ext.deploymentDir = project.hasProperty('etf.td.deployment.dir') ?
-		project.getProperty('etf.td.deployment.dir') :
-		testDeploymentDir
-
-ext.testDataStorageDir = project.hasProperty('etf.ds.dir') ?
-		project.getProperty('etf.ds.dir') :
-		project.file('./build/tmp/etf-ds').absolutePath
-
-
-
-repositories {
-	maven {
-		url "http://files.basex.org/maven"
-	}
-	maven {
-		url "https://services.interactive-instruments.de/etfdev-af/ext-deegree-cache"
-		credentials {
-			username gradle.rootProject.ext.r_user
-			password gradle.rootProject.ext.r_pwd
-		}
-	}
-}
-
-ext.basexVersion = '8.6.7'
+ext.basexVersion = '9.3.2'
+ext.basexApiVersion = '9.3.2'
 ext.deegreeVersion = '3.3.20'
-ext.gmlGeoXVersion = '1.2.2'
+ext.geoToolsVersion = '21.2'
 
-configurations {
-	api
-	bsxPlugins
-	integrationTest
-}
+ext.testDefaultDeploymentDir = project.file('./build/tmp/td')
+ext.testDeploymentDir = project.hasProperty('etf.td.deployment.dir') ?
+        project.getProperty('etf.td.deployment.dir') :
+        ext.testDefaultDeploymentDir
 
-dependencies {
+allprojects {
 
-	compileOnly group: 'de.interactive_instruments', name: 'ii-commons-util', version:'3.0.0'+project.snapshotSuffix
-	compileOnly group: 'de.interactive_instruments.etf', name: 'etf-core', version:'1.1.0'+project.snapshotSuffix
-	compileOnly group: 'de.interactive_instruments.etf', name: 'etf-spi', version:'1.0.1'+project.snapshotSuffix
-	api group: 'org.basex', name: 'basex', version: basexVersion
-  bsxPlugins group: 'de.interactive_instruments.etf.bsxm', name: 'etf-gmlgeox', version: "$gmlGeoXVersion"+project.snapshotSuffix
+    configurations {
+        xarFile
+    }
 
-	compile group: 'commons-logging', name: 'commons-logging', version:'1.1.1'
-	compile group: 'commons-io', name: 'commons-io', version: etf_commonsIoVersion
-	compileOnly group: 'net.sf.saxon', name: 'Saxon-HE', version: etf_saxonHe
-	compileOnly group: 'org.slf4j', name: 'slf4j-api', version: etf_slf4jApiVersion
+    sourceCompatibility = '8'
+    targetCompatibility = '8'
 
-
-	// Degree core for geometry validation
-	compile("org.deegree:deegree-core-base:$deegreeVersion") {
-		exclude group: 'org.slf4j'
-		exclude group: 'xerces'
-		exclude group: 'xml-apis'
-		exclude group: 'com.h2database'
-		exclude group: 'org.postgis'
-		exclude group: 'postgresql'
-		exclude group: 'commons-logging'
-	}
-
-	// Required by BaseX extensions, must be placed in the lib folder or
-	// the extension class loader will not initialize 3rd party libraries correctly
-	compileOnly group: 'xerces', name: 'xercesImpl', version: etf_xercesVersion
-	compileOnly group: 'xml-apis', name: 'xml-apis', version: etf_xmlApisVersion
-	compileOnly('dom4j:dom4j:1.6.1') {
-		exclude group: 'xml-apis'
-	}
-
-	integrationTest group: 'ch.qos.logback', name: 'logback-classic', version: etf_logbackVersion
-	integrationTest group: 'junit', name: 'junit', version: etf_junitTestVersion
-	integrationTest group: 'de.interactive_instruments.etf', name: 'etf-bsxds', version: '2.0.1' + project.snapshotSuffix
-	integrationTest group: 'de.interactive_instruments.etf', name: 'etf-spi', version: '1.0.1' + project.snapshotSuffix
-	integrationTest group: 'de.interactive_instruments.etf', name: 'etf-stdtot', version: '1.0.1' + project.snapshotSuffix
-	integrationTest group: 'de.interactive_instruments.etf.test', name: 'etf-unittest', version: '1.1.1' + project.snapshotSuffix
-}
-
-configurations {
-	compile.exclude group:'xalan'
-	runtime.exclude group: "org.slf4j", module: "slf4j-nop"
-
-	compile.extendsFrom api
-	testCompile.extendsFrom integrationTest
-}
-
-def allLibs = configurations.runtime + configurations.compile -
-		configurations.compile.filter { it.name.startsWith('etf-core') } -
-		configurations.compile.filter { it.name.startsWith('etf-spi') } -
-		configurations.compile.filter { it.name.startsWith('ii-commons-util') } -
-		configurations.compile.filter { it.name.startsWith('slf4j-api') } -
-		configurations.compile.filter { it.name.startsWith('log4j') && !it.name.startsWith('log4j-over-slf4j') } -
-		configurations.compile.filter { it.name.startsWith('jetty') } -
-		configurations.compile.filter { it.name.startsWith('xml-apis') } -
-		configurations.compile.filter { it.name.startsWith('commons-lang3') } -
-		configurations.compile.filter { it.name.startsWith('xercesImpl') }
-
-jar.doFirst {
-	manifest {
-		attributes(
-				'Test-Engine-Title': 'BaseX',
-				'Test-Engine-Vendor': 'BaseX GmbH',
-				'Test-Engine-Version': basexVersion
-		)
+	if (project.name.startsWith("etf-bsxtd")) {
+		// project.tasks.release.mustRunAfter(project.tasks.getByPath(':service-test-library'))
+		// project.tasks.release.mustRunAfter(project.tasks.getByPath(':test-driver'))
+		// project.tasks.release.mustRunAfter(project.tasks.getByPath(':test-lang'))
+	}else{
+		task preTagCommit(overwrite: true) {}
+		task createReleaseTag(overwrite: true) {}
+		task updateVersion(overwrite: true) {}
+		task commitNewVersion(overwrite: true) {}
+		task unSnapshotVersion(overwrite: true) {}
+		task updateVersion(overwrite: true) {}
+		task commitNewVersion(overwrite: true) {}
 	}
 }
 
-jar {
-	into('lib') {
-		from allLibs
-	}
-}
+subprojects {
+	dependencies {
+		compile group: 'de.interactive_instruments', name: 'ii-commons-util', version: '3.2.0' + project.snapshotSuffix
 
-jar {
-    into('plugins') {
-        from configurations.bsxPlugins.copy().setTransitive(false)
-        rename { String fileName ->
-            fileName.replaceAll('-(\\d+)\\.(\\d+)\\.(\\d+)(-SNAPSHOT)?', "")
+        testImplementation group: 'org.slf4j', name: 'slf4j-api', version: etf_slf4jApiVersion
+        testImplementation group: 'org.slf4j', name: 'slf4j-simple', version: etf_slf4jApiVersion
+        testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter', version: etf_junitTestVersion
+        testImplementation "org.xmlunit:xmlunit-core:2.6.2"
+	}
+
+	apply plugin: 'java'
+	apply plugin: 'maven'
+
+    test {
+        useJUnitPlatform()
+        testLogging {
+            events "passed", "skipped", "failed"
         }
     }
 }
 
-task deployTestDriver(dependsOn: jar) {
-	doLast {
-		copy {
-			from jar
-			into "$deploymentDir"
-		}
-		println "Copied test driver to $deploymentDir"
-	}
-}
-
-install {
-	dependsOn = ["deployTestDriver"]
-}
-
-// INTEGRATION TESTS
-///////////////////////////////////////////////////////////////////////////////////////
-
-task deployTestDriverForIntegrationTesting(dependsOn: jar) {
-	group 'verification'
-	doLast {
-		copy {
-			from jar
-			into "$testDeploymentDir"
-		}
-		println "Copied test driver to $testDeploymentDir"
-	}
-}
-
-// Drop classloader for integration tests
-sourceSets {
-	test {
-		java {
-			compileClasspath += main.output
-			runtimeClasspath = configurations.api + test.output + configurations.integrationTest
-		}
-	}
-}
-
-test {
-	dependsOn = ["testClasses", "compileTestJava", "deployTestDriverForIntegrationTesting"]
-}
-
-///////////////////////////////////////////////////////////////////////////////////////

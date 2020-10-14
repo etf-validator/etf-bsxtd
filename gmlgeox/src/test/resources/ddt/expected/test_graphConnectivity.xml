@@ -1,0 +1,5 @@
+<test_graphConnectivity>
+  <connectedSet>v1; v2; v3; v4</connectedSet>
+  <connectedSet>v5; v6; v7; v8</connectedSet>
+  <connectedSet>v9</connectedSet>
+</test_graphConnectivity>

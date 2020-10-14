@@ -1,0 +1,7 @@
+<test_interiorIntersectionsLinePolygon>
+ <test line="c1" polygon="s1">empty_sequence</test>
+ <test line="c2" polygon="s1">LINESTRING (1.5 1, 1.5 2)</test>
+ <test line="c3" polygon="s1">empty_sequence</test>
+ <test line="c4" polygon="s1">MULTILINESTRING ((2 1, 1.5 1.5, 2 2), (1.25 2, 1.25 1.5))</test>
+ <test line="c5" polygon="s1">LINESTRING (1.5 1.5, 1 1.5)</test>
+</test_interiorIntersectionsLinePolygon>

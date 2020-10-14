@@ -1,0 +1,251 @@
+<validationtest>
+  <test>
+    <valid>true</valid>
+    <result>VVVV</result>
+    <messages/>
+  </test>
+  <test>
+    <valid>true</valid>
+    <result>VVVV</result>
+    <messages/>
+  </test>
+  <test>
+    <valid>true</valid>
+    <result>VVVV</result>
+    <messages/>
+  </test>
+  <test>
+    <valid>true</valid>
+    <result>VVVV</result>
+    <messages/>
+  </test>
+  <test>
+    <valid>true</valid>
+    <result>VVVV</result>
+    <messages/>
+  </test>
+  <test>
+    <valid>true</valid>
+    <result>VVVV</result>
+    <messages/>
+  </test>
+  <test>
+    <valid>true</valid>
+    <result>VVVV</result>
+    <messages/>
+  </test>
+  <test>
+    <valid>true</valid>
+    <result>VVVV</result>
+    <messages/>
+  </test>
+  <test>
+    <valid>true</valid>
+    <result>VVVV</result>
+    <messages/>
+  </test>
+  <test>
+    <valid>true</valid>
+    <result>VVVV</result>
+    <messages/>
+  </test>
+  <test>
+    <valid>true</valid>
+    <result>VVVV</result>
+    <messages/>
+  </test>
+  <test>
+    <valid>true</valid>
+    <result>VVVV</result>
+    <messages/>
+  </test>
+  <test>
+    <valid>true</valid>
+    <result>VVVV</result>
+    <messages/>
+  </test>
+  <test>
+    <valid>true</valid>
+    <result>VVVV</result>
+    <messages/>
+  </test>
+  <test>
+    <valid>true</valid>
+    <result>VVVV</result>
+    <messages/>
+  </test>
+  <test>
+    <valid>true</valid>
+    <result>VVVV</result>
+    <messages/>
+  </test>
+  <test>
+    <valid>true</valid>
+    <result>VVVV</result>
+    <messages/>
+  </test>
+  <test>
+    <valid>true</valid>
+    <result>VVVV</result>
+    <messages/>
+  </test>
+  <test>
+    <valid>false</valid>
+    <result>VVFV</result>
+    <messages>
+      <etf:message xmlns:etf="http://www.interactive-instruments.de/etf/2.0" ref="TR.gmlgeox.validation.geometry.repetitionincurvesegment">
+        <etf:argument token="original">Invalid geometry. Repetition of coordinate in curve segment no. 1.</etf:argument>
+        <etf:argument token="0">1</etf:argument>
+        <etf:argument token="ID">c14</etf:argument>
+        <etf:argument token="context">Curve</etf:argument>
+        <etf:argument token="coordinates">2.000,0.000</etf:argument>
+      </etf:message>
+    </messages>
+  </test>
+  <test>
+    <valid>true</valid>
+    <result>VVVV</result>
+    <messages/>
+  </test>
+  <test>
+    <valid>true</valid>
+    <result>VVVV</result>
+    <messages/>
+  </test>
+  <test>
+    <valid>true</valid>
+    <result>VVVV</result>
+    <messages/>
+  </test>
+  <test>
+    <valid>true</valid>
+    <result>VVVV</result>
+    <messages/>
+  </test>
+  <test>
+    <valid>true</valid>
+    <result>VVVV</result>
+    <messages/>
+  </test>
+  <test>
+    <valid>true</valid>
+    <result>VVVV</result>
+    <messages/>
+  </test>
+  <test>
+    <valid>true</valid>
+    <result>VVVV</result>
+    <messages/>
+  </test>
+  <test>
+    <valid>true</valid>
+    <result>VVVV</result>
+    <messages/>
+  </test>
+  <test>
+    <valid>false</valid>
+    <result>FVVV</result>
+    <messages>
+      <etf:message xmlns:etf="http://www.interactive-instruments.de/etf/2.0" ref="TR.gmlgeox.validation.geometry.exteriorRingCW">
+        <etf:argument token="original">Invalid polygon. Outer ring is oriented clockwise.</etf:argument>
+        <etf:argument token="ID">s8</etf:argument>
+        <etf:argument token="context">Surface</etf:argument>
+        <etf:argument token="coordinates">0.000,0.000 0.000,2.000 0.000,2.000 2.000,2.000 2.000,2.000 ...</etf:argument>
+      </etf:message>
+    </messages>
+  </test>
+  <test>
+    <valid>false</valid>
+    <result>FVVV</result>
+    <messages>
+      <etf:message xmlns:etf="http://www.interactive-instruments.de/etf/2.0" ref="TR.gmlgeox.validation.geometry.interiorRingCCW">
+        <etf:argument token="original">Invalid polygon. Inner ring no. 1 is oriented counterclockwise.</etf:argument>
+        <etf:argument token="0">1</etf:argument>
+        <etf:argument token="ID">s9</etf:argument>
+        <etf:argument token="context">Surface</etf:argument>
+        <etf:argument token="coordinates">1.000,1.000 2.000,1.000 2.000,1.000 2.000,2.000 2.000,2.000 ...</etf:argument>
+      </etf:message>
+    </messages>
+  </test>
+  <test>
+    <valid>false</valid>
+    <result>VVFV</result>
+    <messages>
+      <etf:message xmlns:etf="http://www.interactive-instruments.de/etf/2.0" ref="TR.gmlgeox.validation.geometry.repetitionincurvesegment">
+        <etf:argument token="original">Invalid geometry. Repetition of coordinate in curve segment no. 2.</etf:argument>
+        <etf:argument token="0">2</etf:argument>
+        <etf:argument token="ID">s10</etf:argument>
+        <etf:argument token="context">Surface</etf:argument>
+        <etf:argument token="coordinates">1.000,1.000</etf:argument>
+      </etf:message>
+    </messages>
+  </test>
+  <test>
+    <valid>false</valid>
+    <result>VFVV</result>
+    <messages>
+      <etf:message xmlns:etf="http://www.interactive-instruments.de/etf/2.0" ref="TR.gmlgeox.validation.geometry.surfacepatchesnotconnected">
+        <etf:argument token="original">Invalid surface. The patches of the surface are not connected.</etf:argument>
+        <etf:argument token="ID">s11</etf:argument>
+        <etf:argument token="context">Surface</etf:argument>
+      </etf:message>
+    </messages>
+  </test>
+  <test>
+    <valid>false</valid>
+    <result>VFVV</result>
+    <messages>
+      <etf:message xmlns:etf="http://www.interactive-instruments.de/etf/2.0" ref="TR.gmlgeox.validation.geometry.surfacepatchesnotconnected">
+        <etf:argument token="original">Invalid surface. The patches of the surface are not connected.</etf:argument>
+        <etf:argument token="ID">s12</etf:argument>
+        <etf:argument token="context">Surface</etf:argument>
+      </etf:message>
+    </messages>
+  </test>
+  <test>
+    <valid>true</valid>
+    <result>VVVV</result>
+    <messages/>
+  </test>
+  <test>
+    <valid>false</valid>
+    <result>VFVV</result>
+    <messages>
+      <etf:message xmlns:etf="http://www.interactive-instruments.de/etf/2.0" ref="TR.gmlgeox.validation.geometry.surfacepatchesnotconnected">
+        <etf:argument token="original">Invalid surface. The patches of the surface are not connected.</etf:argument>
+        <etf:argument token="ID">s14</etf:argument>
+        <etf:argument token="context">Surface</etf:argument>
+      </etf:message>
+    </messages>
+  </test>
+  <test>
+    <valid>false</valid>
+    <result>FVVF</result>
+    <messages>
+      <etf:message xmlns:etf="http://www.interactive-instruments.de/etf/2.0" ref="TR.gmlgeox.validation.geometry.jts.5">
+        <etf:argument token="original">Invalid polygon. Two rings of the polygonal geometry intersect.</etf:argument>
+        <etf:argument token="ID">s15</etf:argument>
+        <etf:argument token="context">Surface</etf:argument>
+        <etf:argument token="coordinates">2.000,3.000</etf:argument>
+      </etf:message>
+      <etf:message xmlns:etf="http://www.interactive-instruments.de/etf/2.0" ref="TR.gmlgeox.validation.geometry.not.simple.intersection">
+        <etf:argument token="original">The geometry is not simple due to self-intersection.</etf:argument>
+        <etf:argument token="ID">s15</etf:argument>
+        <etf:argument token="context">Surface</etf:argument>
+        <etf:argument token="coordinates">5.000,2.500</etf:argument>
+      </etf:message>
+    </messages>
+  </test>
+  <test>
+    <valid>false</valid>
+    <result>FVVV</result>
+    <messages>
+      <etf:message xmlns:etf="http://www.interactive-instruments.de/etf/2.0" ref="TR.gmlgeox.validation.geometry.jts.4">
+        <etf:argument token="original">Invalid polygon. The interior of a polygon is disjoint (this may be caused by set of contiguous holes splitting the polygon into two parts).</etf:argument>
+        <etf:argument token="ID">s16</etf:argument>
+        <etf:argument token="context">Surface</etf:argument>
+        <etf:argument token="coordinates">0.000,0.000</etf:argument>
+      </etf:message>
+    </messages>
+  </test>
+</validationtest>

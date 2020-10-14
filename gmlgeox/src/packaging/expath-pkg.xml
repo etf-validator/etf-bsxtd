@@ -1,0 +1,18 @@
+<package xmlns="http://expath.org/ns/pkg"
+         name="ETF GmlGeoX"
+         abbrev="geox"
+         version="@@libVersion@@"
+         spec="1.0">
+
+    <title>ETF GmlGeoX</title>
+    <dependency processor="basex"/>
+    <xquery>
+        <namespace>https://modules.etf-validator.net/gmlgeox/2</namespace>
+        <file>GmlGeoX.xq</file>
+    </xquery>
+    <xquery>
+        <namespace>https://modules.etf-validator.net/graphx/1</namespace>
+        <file>GraphX.xq</file>
+    </xquery>
+
+</package>

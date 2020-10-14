@@ -1,0 +1,240 @@
+<ii:GeometryCollection xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:ii="http://www.interactive-instruments.de/test" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <gml:boundedBy>
+        <gml:Envelope srsName="urn:adv:crs:ETRS89_UTM32">
+            <gml:lowerCorner>0 0</gml:lowerCorner>
+            <gml:upperCorner>10 10</gml:upperCorner>
+        </gml:Envelope>
+    </gml:boundedBy>
+    <ii:member gml:id="M1">
+        <AX_GeoreferenzierteGebaeudeadresse gml:id="Fail1">
+            <gml:identifier codeSpace="http://www.adv-online.de/">urn:adv:oid:Fail1_max</gml:identifier>
+            <lebenszeitintervall>
+                <AA_Lebenszeitintervall>
+                    <beginnt>2012-03-07T14:59:45Z</beginnt>
+                </AA_Lebenszeitintervall>
+            </lebenszeitintervall>
+            <modellart>
+                <AA_Modellart>
+                    <advStandardModell>DLKM</advStandardModell>
+                </AA_Modellart>
+            </modellart>
+            <anlass>RP0006</anlass>
+            <zeigtAufExternes>
+                <AA_Fachdatenverbindung>
+                    <art>urn:TESTURN</art>
+                    <fachdatenobjekt>
+                        <AA_Fachdatenobjekt>
+                            <name>TESTNAME</name>
+                        </AA_Fachdatenobjekt>
+                    </fachdatenobjekt>
+                </AA_Fachdatenverbindung>
+            </zeigtAufExternes>
+            <position>
+                <gml:Point gml:id="A4">
+                    <gml:pos>408331.407 5473380.787</gml:pos>
+                </gml:Point>
+            </position>
+            <qualitaetsangaben>0000</qualitaetsangaben>
+            <land>00</land>
+            <regierungsbezirk>0</regierungsbezirk>
+            <kreis>00</kreis>
+            <gemeinde>000</gemeinde>
+            <ortsteil>0000</ortsteil>
+            <strassenschluessel>00000</strassenschluessel>
+            <hausnummer>00</hausnummer>
+            <adressierungszusatz>A</adressierungszusatz>
+            <hatAuch xlink:href="urn:adv:oid:0"/>
+        </AX_GeoreferenzierteGebaeudeadresse>
+    </ii:member>
+    <ii:member>
+        <AX_BesondereFlurstuecksgrenze gml:id="nearestObjToFail1">
+            <gml:identifier codeSpace="http://www.adv-online.de/">urn:adv:oid:nearestObjToFail1_max</gml:identifier>
+            <lebenszeitintervall>
+                <AA_Lebenszeitintervall>
+                    <beginnt>2011-04-26T11:10:36Z</beginnt>
+                </AA_Lebenszeitintervall>
+            </lebenszeitintervall>
+            <modellart>
+                <AA_Modellart>
+                    <advStandardModell>DLKM</advStandardModell>
+                </AA_Modellart>
+            </modellart>
+            <anlass>00000</anlass>
+            <zeigtAufExternes>
+                <AA_Fachdatenverbindung>
+                    <art>urn:TESTURN1</art>
+                    <fachdatenobjekt>
+                        <AA_Fachdatenobjekt>
+                            <name>TESTNAME</name>
+                        </AA_Fachdatenobjekt>
+                    </fachdatenobjekt>
+                </AA_Fachdatenverbindung>
+            </zeigtAufExternes>
+            <position>
+                <gml:Curve gml:id="LT">
+                    <gml:segments>
+                        <gml:LineStringSegment>
+                            <gml:posList>408322.811 5473383.551 408331.407 5473380.789</gml:posList>
+                        </gml:LineStringSegment>
+                    </gml:segments>
+                </gml:Curve>
+            </position>
+            <artDerFlurstuecksgrenze>7003</artDerFlurstuecksgrenze>
+            <artDerFlurstuecksgrenze>3000</artDerFlurstuecksgrenze>
+        </AX_BesondereFlurstuecksgrenze>
+    </ii:member>
+    <ii:member>
+        <AX_BesondereFlurstuecksgrenze xmlns="http://www.adv-online.de/namespaces/adv/gid/6.0" xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/6.0" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:ogc="http://www.adv-online.de/namespaces/adv/gid/ogc" xmlns:wfs="http://www.adv-online.de/namespaces/adv/gid/wfs" xmlns:wfsext="http://www.adv-online.de/namespaces/adv/gid/wfsext" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Fail1_minMax">
+            <gml:identifier codeSpace="http://www.adv-online.de/">urn:adv:oid:Fail1_minMax</gml:identifier>
+            <lebenszeitintervall>
+                <AA_Lebenszeitintervall>
+                    <beginnt>2016-08-22T09:28:05Z</beginnt>
+                </AA_Lebenszeitintervall>
+            </lebenszeitintervall>
+            <modellart>
+                <AA_Modellart>
+                    <advStandardModell>DLKM</advStandardModell>
+                </AA_Modellart>
+            </modellart>
+            <anlass>00000</anlass>
+            <zeigtAufExternes>
+                <AA_Fachdatenverbindung>
+                    <art>urn:TESTURN2</art>
+                    <fachdatenobjekt>
+                        <AA_Fachdatenobjekt>
+                            <name>TESTNAME</name>
+                        </AA_Fachdatenobjekt>
+                    </fachdatenobjekt>
+                </AA_Fachdatenverbindung>
+            </zeigtAufExternes>
+            <zeigtAufExternes>
+                <AA_Fachdatenverbindung>
+                    <art>urn:TESTURN3</art>
+                    <fachdatenobjekt>
+                        <AA_Fachdatenobjekt>
+                            <name>TESTNAME</name>
+                        </AA_Fachdatenobjekt>
+                    </fachdatenobjekt>
+                </AA_Fachdatenverbindung>
+            </zeigtAufExternes>
+            <position>
+                <gml:Curve gml:id="A04W">
+                    <gml:segments>
+                        <gml:LineStringSegment>
+                            <gml:posList>417284.007 5478239.670 417284.007 5478239.679</gml:posList>
+                        </gml:LineStringSegment>
+                        <gml:LineStringSegment>
+                            <gml:posList>417284.007 5478239.679 417287.894 5478234.691</gml:posList>
+                        </gml:LineStringSegment>
+                    </gml:segments>
+                </gml:Curve>
+            </position>
+            <artDerFlurstuecksgrenze>7003</artDerFlurstuecksgrenze>
+            <artDerFlurstuecksgrenze>3000</artDerFlurstuecksgrenze>
+            <artDerFlurstuecksgrenze>7104</artDerFlurstuecksgrenze>
+            <artDerFlurstuecksgrenze>7106</artDerFlurstuecksgrenze>
+            <artDerFlurstuecksgrenze>7108</artDerFlurstuecksgrenze>
+        </AX_BesondereFlurstuecksgrenze>
+    </ii:member>
+    <ii:member>
+        <AX_Flurstueck gml:id="TESTID">
+            <gml:identifier codeSpace="http://www.adv-online.de/">urn:adv:oid:TESTID</gml:identifier>
+            <lebenszeitintervall>
+                <AA_Lebenszeitintervall>
+                    <beginnt>2011-05-31T07:25:27Z</beginnt>
+                </AA_Lebenszeitintervall>
+            </lebenszeitintervall>
+            <modellart>
+                <AA_Modellart>
+                    <advStandardModell>DLKM</advStandardModell>
+                </AA_Modellart>
+            </modellart>
+            <anlass>00000</anlass>
+            <zeigtAufExternes>
+                <AA_Fachdatenverbindung>
+                    <art>urn:TESTURN4</art>
+                    <fachdatenobjekt>
+                        <AA_Fachdatenobjekt>
+                            <name>TESTNAME</name>
+                        </AA_Fachdatenobjekt>
+                    </fachdatenobjekt>
+                </AA_Fachdatenverbindung>
+            </zeigtAufExternes>
+            <position>
+                <gml:Surface gml:id="HO">
+                    <gml:patches>
+                        <gml:PolygonPatch>
+                            <gml:exterior>
+                                <gml:Ring>
+                                    <gml:curveMember>
+                                        <gml:Curve gml:id="HP">
+                                            <gml:segments>
+                                                <gml:LineStringSegment>
+                                                    <gml:posList>408209.778 5480066.419 408209.940 5480066.064 408212.415 5480060.649 408212.426 5480060.627</gml:posList>
+                                                </gml:LineStringSegment>
+                                            </gml:segments>
+                                        </gml:Curve>
+                                    </gml:curveMember>
+                                    <gml:curveMember>
+                                        <gml:Curve gml:id="HQ">
+                                            <gml:segments>
+                                                <gml:LineStringSegment>
+                                                    <gml:posList>408212.426 5480060.627 408215.118 5480061.923</gml:posList>
+                                                </gml:LineStringSegment>
+                                            </gml:segments>
+                                        </gml:Curve>
+                                    </gml:curveMember>
+                                    <gml:curveMember>
+                                        <gml:Curve gml:id="HR">
+                                            <gml:segments>
+                                                <gml:LineStringSegment>
+                                                    <gml:posList>408215.118 5480061.923 408212.571 5480067.547</gml:posList>
+                                                </gml:LineStringSegment>
+                                            </gml:segments>
+                                        </gml:Curve>
+                                    </gml:curveMember>
+                                    <gml:curveMember>
+                                        <gml:Curve gml:id="HS">
+                                            <gml:segments>
+                                                <gml:LineStringSegment>
+                                                    <gml:posList>408212.571 5480067.547 408209.778 5480066.419</gml:posList>
+                                                </gml:LineStringSegment>
+                                            </gml:segments>
+                                        </gml:Curve>
+                                    </gml:curveMember>
+                                </gml:Ring>
+                            </gml:exterior>
+                        </gml:PolygonPatch>
+                    </gml:patches>
+                </gml:Surface>
+            </position>
+            <gemarkung>
+                <AX_Gemarkung_Schluessel>
+                    <land>00</land>
+                    <gemarkungsnummer>0000</gemarkungsnummer>
+                </AX_Gemarkung_Schluessel>
+            </gemarkung>
+            <flurstuecksnummer>
+                <AX_Flurstuecksnummer>
+                    <zaehler>0001</zaehler>
+                    <nenner>01</nenner>
+                </AX_Flurstuecksnummer>
+            </flurstuecksnummer>
+            <flurstueckskennzeichen>00000</flurstueckskennzeichen>
+            <amtlicheFlaeche uom="urn:adv:uom:m2">19.00</amtlicheFlaeche>
+            <flurnummer>0</flurnummer>
+            <rechtsbehelfsverfahren>false</rechtsbehelfsverfahren>
+            <zeitpunktDerEntstehung>2010-12-21</zeitpunktDerEntstehung>
+            <gemeindezugehoerigkeit>
+                <AX_Gemeindekennzeichen>
+                    <land>00</land>
+                    <regierungsbezirk>0</regierungsbezirk>
+                    <kreis>00</kreis>
+                    <gemeinde>000</gemeinde>
+                </AX_Gemeindekennzeichen>
+            </gemeindezugehoerigkeit>
+            <istGebucht xlink:href="urn:adv:oid:DERPLP160000AOge"/>
+            <zeigtAuf xlink:href="urn:adv:oid:DERPLP160000vcnE"/>
+        </AX_Flurstueck>
+    </ii:member>
+</ii:GeometryCollection>

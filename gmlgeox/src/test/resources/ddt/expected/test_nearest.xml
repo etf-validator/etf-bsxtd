@@ -1,0 +1,380 @@
+<test_nearest>
+    <max>
+        <geoxr:geoxResults xmlns:geoxr="https://modules.etf-validator.net/gmlgeox/result">
+            <geoxr:result>
+                <geoxr:featureWithNearest>
+                    <AX_GeoreferenzierteGebaeudeadresse xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:ii="http://www.interactive-instruments.de/test" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Fail1">
+                        <gml:identifier codeSpace="http://www.adv-online.de/">urn:adv:oid:Fail1_max</gml:identifier>
+                        <lebenszeitintervall>
+                            <AA_Lebenszeitintervall>
+                                <beginnt>2012-03-07T14:59:45Z</beginnt>
+                            </AA_Lebenszeitintervall>
+                        </lebenszeitintervall>
+                        <modellart>
+                            <AA_Modellart>
+                                <advStandardModell>DLKM</advStandardModell>
+                            </AA_Modellart>
+                        </modellart>
+                        <anlass>RP0006</anlass>
+                        <zeigtAufExternes>
+                            <AA_Fachdatenverbindung>
+                                <art>urn:TESTURN</art>
+                                <fachdatenobjekt>
+                                    <AA_Fachdatenobjekt>
+                                        <name>TESTNAME</name>
+                                    </AA_Fachdatenobjekt>
+                                </fachdatenobjekt>
+                            </AA_Fachdatenverbindung>
+                        </zeigtAufExternes>
+                        <position>
+                            <gml:Point gml:id="A4">
+                                <gml:pos>408331.407 5473380.787</gml:pos>
+                            </gml:Point>
+                        </position>
+                        <qualitaetsangaben>0000</qualitaetsangaben>
+                        <land>00</land>
+                        <regierungsbezirk>0</regierungsbezirk>
+                        <kreis>00</kreis>
+                        <gemeinde>000</gemeinde>
+                        <ortsteil>0000</ortsteil>
+                        <strassenschluessel>00000</strassenschluessel>
+                        <hausnummer>00</hausnummer>
+                        <adressierungszusatz>A</adressierungszusatz>
+                        <hatAuch xlink:href="urn:adv:oid:0"/>
+                    </AX_GeoreferenzierteGebaeudeadresse>
+                </geoxr:featureWithNearest>
+                <geoxr:currentPointWithNearest>408331.407 5473380.787</geoxr:currentPointWithNearest>
+                <geoxr:nearestFeature>
+
+                    <AX_BesondereFlurstuecksgrenze xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:ii="http://www.interactive-instruments.de/test" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="nearestObjToFail1">
+                        <gml:identifier codeSpace="http://www.adv-online.de/">urn:adv:oid:nearestObjToFail1_max</gml:identifier>
+                        <lebenszeitintervall>
+                            <AA_Lebenszeitintervall>
+                                <beginnt>2011-04-26T11:10:36Z</beginnt>
+                            </AA_Lebenszeitintervall>
+                        </lebenszeitintervall>
+                        <modellart>
+                            <AA_Modellart>
+                                <advStandardModell>DLKM</advStandardModell>
+                            </AA_Modellart>
+                        </modellart>
+                        <anlass>00000</anlass>
+                        <zeigtAufExternes>
+                            <AA_Fachdatenverbindung>
+                                <art>urn:TESTURN1</art>
+                                <fachdatenobjekt>
+                                    <AA_Fachdatenobjekt>
+                                        <name>TESTNAME</name>
+                                    </AA_Fachdatenobjekt>
+                                </fachdatenobjekt>
+                            </AA_Fachdatenverbindung>
+                        </zeigtAufExternes>
+                        <position>
+                            <gml:Curve gml:id="LT">
+                                <gml:segments>
+                                    <gml:LineStringSegment>
+                                        <gml:posList>408322.811 5473383.551 408331.407 5473380.789</gml:posList>
+                                    </gml:LineStringSegment>
+                                </gml:segments>
+                            </gml:Curve>
+                        </position>
+                        <artDerFlurstuecksgrenze>7003</artDerFlurstuecksgrenze>
+                        <artDerFlurstuecksgrenze>3000</artDerFlurstuecksgrenze>
+                    </AX_BesondereFlurstuecksgrenze>
+                </geoxr:nearestFeature>
+                <geoxr:nearestPoint>408331.407 5473380.789</geoxr:nearestPoint>
+                <geoxr:distance>0.0020000003278255463</geoxr:distance>
+            </geoxr:result>
+            <geoxr:result>
+                <geoxr:featureWithNearest>
+                    <AX_BesondereFlurstuecksgrenze xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:ii="http://www.interactive-instruments.de/test" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="nearestObjToFail1">
+                        <gml:identifier codeSpace="http://www.adv-online.de/">urn:adv:oid:nearestObjToFail1_max</gml:identifier>
+                        <lebenszeitintervall>
+                            <AA_Lebenszeitintervall>
+                                <beginnt>2011-04-26T11:10:36Z</beginnt>
+                            </AA_Lebenszeitintervall>
+                        </lebenszeitintervall>
+                        <modellart>
+                            <AA_Modellart>
+                                <advStandardModell>DLKM</advStandardModell>
+                            </AA_Modellart>
+                        </modellart>
+                        <anlass>00000</anlass>
+                        <zeigtAufExternes>
+                            <AA_Fachdatenverbindung>
+                                <art>urn:TESTURN1</art>
+                                <fachdatenobjekt>
+                                    <AA_Fachdatenobjekt>
+                                        <name>TESTNAME</name>
+                                    </AA_Fachdatenobjekt>
+                                </fachdatenobjekt>
+                            </AA_Fachdatenverbindung>
+                        </zeigtAufExternes>
+                        <position>
+                            <gml:Curve gml:id="LT">
+                                <gml:segments>
+                                    <gml:LineStringSegment>
+                                        <gml:posList>408322.811 5473383.551 408331.407 5473380.789</gml:posList>
+                                    </gml:LineStringSegment>
+                                </gml:segments>
+                            </gml:Curve>
+                        </position>
+                        <artDerFlurstuecksgrenze>7003</artDerFlurstuecksgrenze>
+                        <artDerFlurstuecksgrenze>3000</artDerFlurstuecksgrenze>
+                    </AX_BesondereFlurstuecksgrenze>
+                </geoxr:featureWithNearest>
+                <geoxr:currentPointWithNearest>408331.407 5473380.789</geoxr:currentPointWithNearest>
+                <geoxr:nearestFeature>
+                    <AX_GeoreferenzierteGebaeudeadresse xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:ii="http://www.interactive-instruments.de/test" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Fail1">
+                        <gml:identifier codeSpace="http://www.adv-online.de/">urn:adv:oid:Fail1_max</gml:identifier>
+                        <lebenszeitintervall>
+                            <AA_Lebenszeitintervall>
+                                <beginnt>2012-03-07T14:59:45Z</beginnt>
+                            </AA_Lebenszeitintervall>
+                        </lebenszeitintervall>
+                        <modellart>
+                            <AA_Modellart>
+                                <advStandardModell>DLKM</advStandardModell>
+                            </AA_Modellart>
+                        </modellart>
+                        <anlass>RP0006</anlass>
+                        <zeigtAufExternes>
+                            <AA_Fachdatenverbindung>
+                                <art>urn:TESTURN</art>
+                                <fachdatenobjekt>
+                                    <AA_Fachdatenobjekt>
+                                        <name>TESTNAME</name>
+                                    </AA_Fachdatenobjekt>
+                                </fachdatenobjekt>
+                            </AA_Fachdatenverbindung>
+                        </zeigtAufExternes>
+                        <position>
+                            <gml:Point gml:id="A4">
+                                <gml:pos>408331.407 5473380.787</gml:pos>
+                            </gml:Point>
+                        </position>
+                        <qualitaetsangaben>0000</qualitaetsangaben>
+                        <land>00</land>
+                        <regierungsbezirk>0</regierungsbezirk>
+                        <kreis>00</kreis>
+                        <gemeinde>000</gemeinde>
+                        <ortsteil>0000</ortsteil>
+                        <strassenschluessel>00000</strassenschluessel>
+                        <hausnummer>00</hausnummer>
+                        <adressierungszusatz>A</adressierungszusatz>
+                        <hatAuch xlink:href="urn:adv:oid:0"/>
+                    </AX_GeoreferenzierteGebaeudeadresse>
+                </geoxr:nearestFeature>
+                <geoxr:nearestPoint>408331.407 5473380.787</geoxr:nearestPoint>
+                <geoxr:distance>0.0020000003278255463</geoxr:distance>
+            </geoxr:result>
+        </geoxr:geoxResults>
+    </max>
+    <minMax>
+        <geoxr:geoxResults xmlns:geoxr="https://modules.etf-validator.net/gmlgeox/result">
+            <geoxr:result>
+                <geoxr:featureWithNearest>
+                    <AX_BesondereFlurstuecksgrenze xmlns="http://www.adv-online.de/namespaces/adv/gid/6.0" xmlns:ii="http://www.interactive-instruments.de/test" xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/6.0" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:ogc="http://www.adv-online.de/namespaces/adv/gid/ogc" xmlns:wfs="http://www.adv-online.de/namespaces/adv/gid/wfs" xmlns:wfsext="http://www.adv-online.de/namespaces/adv/gid/wfsext" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Fail1_minMax">
+                        <gml:identifier codeSpace="http://www.adv-online.de/">urn:adv:oid:Fail1_minMax</gml:identifier>
+                        <lebenszeitintervall>
+                            <AA_Lebenszeitintervall>
+                                <beginnt>2016-08-22T09:28:05Z</beginnt>
+                            </AA_Lebenszeitintervall>
+                        </lebenszeitintervall>
+                        <modellart>
+                            <AA_Modellart>
+                                <advStandardModell>DLKM</advStandardModell>
+                            </AA_Modellart>
+                        </modellart>
+                        <anlass>00000</anlass>
+                        <zeigtAufExternes>
+                            <AA_Fachdatenverbindung>
+                                <art>urn:TESTURN2</art>
+                                <fachdatenobjekt>
+                                    <AA_Fachdatenobjekt>
+                                        <name>TESTNAME</name>
+                                    </AA_Fachdatenobjekt>
+                                </fachdatenobjekt>
+                            </AA_Fachdatenverbindung>
+                        </zeigtAufExternes>
+                        <zeigtAufExternes>
+                            <AA_Fachdatenverbindung>
+                                <art>urn:TESTURN3</art>
+                                <fachdatenobjekt>
+                                    <AA_Fachdatenobjekt>
+                                        <name>TESTNAME</name>
+                                    </AA_Fachdatenobjekt>
+                                </fachdatenobjekt>
+                            </AA_Fachdatenverbindung>
+                        </zeigtAufExternes>
+                        <position>
+                            <gml:Curve gml:id="A04W">
+                                <gml:segments>
+                                    <gml:LineStringSegment>
+                                        <gml:posList>417284.007 5478239.670 417284.007 5478239.679</gml:posList>
+                                    </gml:LineStringSegment>
+                                    <gml:LineStringSegment>
+                                        <gml:posList>417284.007 5478239.679 417287.894 5478234.691</gml:posList>
+                                    </gml:LineStringSegment>
+                                </gml:segments>
+                            </gml:Curve>
+                        </position>
+                        <artDerFlurstuecksgrenze>7003</artDerFlurstuecksgrenze>
+                        <artDerFlurstuecksgrenze>3000</artDerFlurstuecksgrenze>
+                        <artDerFlurstuecksgrenze>7104</artDerFlurstuecksgrenze>
+                        <artDerFlurstuecksgrenze>7106</artDerFlurstuecksgrenze>
+                        <artDerFlurstuecksgrenze>7108</artDerFlurstuecksgrenze>
+                    </AX_BesondereFlurstuecksgrenze>
+                </geoxr:featureWithNearest>
+                <geoxr:currentPointWithNearest>417284.007 5478239.67</geoxr:currentPointWithNearest>
+                <geoxr:nearestFeature>
+                    <AX_BesondereFlurstuecksgrenze xmlns="http://www.adv-online.de/namespaces/adv/gid/6.0" xmlns:ii="http://www.interactive-instruments.de/test" xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/6.0" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:ogc="http://www.adv-online.de/namespaces/adv/gid/ogc" xmlns:wfs="http://www.adv-online.de/namespaces/adv/gid/wfs" xmlns:wfsext="http://www.adv-online.de/namespaces/adv/gid/wfsext" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Fail1_minMax">
+                        <gml:identifier codeSpace="http://www.adv-online.de/">urn:adv:oid:Fail1_minMax</gml:identifier>
+                        <lebenszeitintervall>
+                            <AA_Lebenszeitintervall>
+                                <beginnt>2016-08-22T09:28:05Z</beginnt>
+                            </AA_Lebenszeitintervall>
+                        </lebenszeitintervall>
+                        <modellart>
+                            <AA_Modellart>
+                                <advStandardModell>DLKM</advStandardModell>
+                            </AA_Modellart>
+                        </modellart>
+                        <anlass>00000</anlass>
+                        <zeigtAufExternes>
+                            <AA_Fachdatenverbindung>
+                                <art>urn:TESTURN2</art>
+                                <fachdatenobjekt>
+                                    <AA_Fachdatenobjekt>
+                                        <name>TESTNAME</name>
+                                    </AA_Fachdatenobjekt>
+                                </fachdatenobjekt>
+                            </AA_Fachdatenverbindung>
+                        </zeigtAufExternes>
+                        <zeigtAufExternes>
+                            <AA_Fachdatenverbindung>
+                                <art>urn:TESTURN3</art>
+                                <fachdatenobjekt>
+                                    <AA_Fachdatenobjekt>
+                                        <name>TESTNAME</name>
+                                    </AA_Fachdatenobjekt>
+                                </fachdatenobjekt>
+                            </AA_Fachdatenverbindung>
+                        </zeigtAufExternes>
+                        <position>
+                            <gml:Curve gml:id="A04W">
+                                <gml:segments>
+                                    <gml:LineStringSegment>
+                                        <gml:posList>417284.007 5478239.670 417284.007 5478239.679</gml:posList>
+                                    </gml:LineStringSegment>
+                                    <gml:LineStringSegment>
+                                        <gml:posList>417284.007 5478239.679 417287.894 5478234.691</gml:posList>
+                                    </gml:LineStringSegment>
+                                </gml:segments>
+                            </gml:Curve>
+                        </position>
+                        <artDerFlurstuecksgrenze>7003</artDerFlurstuecksgrenze>
+                        <artDerFlurstuecksgrenze>3000</artDerFlurstuecksgrenze>
+                        <artDerFlurstuecksgrenze>7104</artDerFlurstuecksgrenze>
+                        <artDerFlurstuecksgrenze>7106</artDerFlurstuecksgrenze>
+                        <artDerFlurstuecksgrenze>7108</artDerFlurstuecksgrenze>
+                    </AX_BesondereFlurstuecksgrenze></geoxr:nearestFeature>
+                <geoxr:nearestPoint>417284.007 5478239.679</geoxr:nearestPoint>
+                <geoxr:distance>0.008999999612569809</geoxr:distance>
+            </geoxr:result>
+        </geoxr:geoxResults>
+    </minMax>
+    <pass>
+        <geoxr:geoxResults xmlns:geoxr="https://modules.etf-validator.net/gmlgeox/result">
+        </geoxr:geoxResults>
+    </pass>
+    <limitErrors>
+
+        <geoxr:geoxResults xmlns:geoxr="https://modules.etf-validator.net/gmlgeox/result">
+            <geoxr:result>
+                <geoxr:featureWithNearest>
+                    <AX_GeoreferenzierteGebaeudeadresse xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:ii="http://www.interactive-instruments.de/test" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="Fail1">
+                        <gml:identifier codeSpace="http://www.adv-online.de/">urn:adv:oid:Fail1_max</gml:identifier>
+                        <lebenszeitintervall>
+                            <AA_Lebenszeitintervall>
+                                <beginnt>2012-03-07T14:59:45Z</beginnt>
+                            </AA_Lebenszeitintervall>
+                        </lebenszeitintervall>
+                        <modellart>
+                            <AA_Modellart>
+                                <advStandardModell>DLKM</advStandardModell>
+                            </AA_Modellart>
+                        </modellart>
+                        <anlass>RP0006</anlass>
+                        <zeigtAufExternes>
+                            <AA_Fachdatenverbindung>
+                                <art>urn:TESTURN</art>
+                                <fachdatenobjekt>
+                                    <AA_Fachdatenobjekt>
+                                        <name>TESTNAME</name>
+                                    </AA_Fachdatenobjekt>
+                                </fachdatenobjekt>
+                            </AA_Fachdatenverbindung>
+                        </zeigtAufExternes>
+                        <position>
+                            <gml:Point gml:id="A4">
+                                <gml:pos>408331.407 5473380.787</gml:pos>
+                            </gml:Point>
+                        </position>
+                        <qualitaetsangaben>0000</qualitaetsangaben>
+                        <land>00</land>
+                        <regierungsbezirk>0</regierungsbezirk>
+                        <kreis>00</kreis>
+                        <gemeinde>000</gemeinde>
+                        <ortsteil>0000</ortsteil>
+                        <strassenschluessel>00000</strassenschluessel>
+                        <hausnummer>00</hausnummer>
+                        <adressierungszusatz>A</adressierungszusatz>
+                        <hatAuch xlink:href="urn:adv:oid:0"/>
+                    </AX_GeoreferenzierteGebaeudeadresse>
+                </geoxr:featureWithNearest>
+                <geoxr:currentPointWithNearest>408331.407 5473380.787</geoxr:currentPointWithNearest>
+                <geoxr:nearestFeature>
+
+                    <AX_BesondereFlurstuecksgrenze xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:ii="http://www.interactive-instruments.de/test" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="nearestObjToFail1">
+                        <gml:identifier codeSpace="http://www.adv-online.de/">urn:adv:oid:nearestObjToFail1_max</gml:identifier>
+                        <lebenszeitintervall>
+                            <AA_Lebenszeitintervall>
+                                <beginnt>2011-04-26T11:10:36Z</beginnt>
+                            </AA_Lebenszeitintervall>
+                        </lebenszeitintervall>
+                        <modellart>
+                            <AA_Modellart>
+                                <advStandardModell>DLKM</advStandardModell>
+                            </AA_Modellart>
+                        </modellart>
+                        <anlass>00000</anlass>
+                        <zeigtAufExternes>
+                            <AA_Fachdatenverbindung>
+                                <art>urn:TESTURN1</art>
+                                <fachdatenobjekt>
+                                    <AA_Fachdatenobjekt>
+                                        <name>TESTNAME</name>
+                                    </AA_Fachdatenobjekt>
+                                </fachdatenobjekt>
+                            </AA_Fachdatenverbindung>
+                        </zeigtAufExternes>
+                        <position>
+                            <gml:Curve gml:id="LT">
+                                <gml:segments>
+                                    <gml:LineStringSegment>
+                                        <gml:posList>408322.811 5473383.551 408331.407 5473380.789</gml:posList>
+                                    </gml:LineStringSegment>
+                                </gml:segments>
+                            </gml:Curve>
+                        </position>
+                        <artDerFlurstuecksgrenze>7003</artDerFlurstuecksgrenze>
+                        <artDerFlurstuecksgrenze>3000</artDerFlurstuecksgrenze>
+                    </AX_BesondereFlurstuecksgrenze>
+                </geoxr:nearestFeature>
+                <geoxr:nearestPoint>408331.407 5473380.789</geoxr:nearestPoint>
+                <geoxr:distance>0.0020000003278255463</geoxr:distance>
+            </geoxr:result>
+        </geoxr:geoxResults>
+    </limitErrors>
+</test_nearest>

@@ -1,0 +1,135 @@
+<ii:GeometryCollection xmlns:gco="http://www.isotc211.org/2005/gco"
+                       xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml/3.2"
+                       xmlns:ii="http://www.interactive-instruments.de/test" xmlns:xlink="http://www.w3.org/1999/xlink"
+                       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <ii:member>
+  <gml:Point gml:id="Point" srsName="urn:adv:crs:ETRS89_UTM32">
+   <gml:pos>1 1</gml:pos>
+  </gml:Point>
+ </ii:member>
+ <ii:member>
+  <gml:MultiPoint gml:id="MultiPoint" srsName="urn:adv:crs:ETRS89_UTM32">
+   <gml:pointMember>
+    <gml:Point>
+     <gml:pos>1 1</gml:pos>
+    </gml:Point>
+   </gml:pointMember>
+   <gml:pointMember>
+    <gml:Point>
+     <gml:pos>2 2</gml:pos>
+    </gml:Point>
+   </gml:pointMember>
+  </gml:MultiPoint>
+ </ii:member>
+ <ii:member>
+  <gml:Curve gml:id="Curve_notClosed" srsName="urn:adv:crs:ETRS89_UTM32">
+   <gml:segments>
+    <gml:LineStringSegment interpolation="linear">
+     <gml:posList count="2">1 1 1 3</gml:posList>
+    </gml:LineStringSegment>
+   </gml:segments>
+  </gml:Curve>
+ </ii:member>
+ <ii:member>
+  <gml:Curve gml:id="Curve_closed" srsName="urn:adv:crs:ETRS89_UTM32">
+   <gml:segments>
+    <gml:LineStringSegment interpolation="linear">
+     <gml:posList count="2">0 0 1 1 0 0</gml:posList>
+    </gml:LineStringSegment>
+   </gml:segments>
+  </gml:Curve>
+ </ii:member>
+ <ii:member>
+  <gml:MultiCurve gml:id="MultiCurve_notClosed" srsName="urn:adv:crs:ETRS89_UTM32">
+   <gml:curveMember>
+    <gml:Curve>
+     <gml:segments>
+      <gml:LineStringSegment interpolation="linear">
+       <gml:posList count="2">0 0 1 1 0 0</gml:posList>
+      </gml:LineStringSegment>
+     </gml:segments>
+    </gml:Curve>
+   </gml:curveMember>
+   <gml:curveMember>
+    <gml:Curve>
+     <!-- This curve is not closed -->
+     <gml:segments>
+      <gml:LineStringSegment interpolation="linear">
+       <gml:posList count="2">1 1 2 2 3 3</gml:posList>
+      </gml:LineStringSegment>
+     </gml:segments>
+    </gml:Curve>
+   </gml:curveMember>
+  </gml:MultiCurve>
+ </ii:member>
+ <ii:member>
+  <gml:MultiCurve gml:id="MultiCurve_closed" srsName="urn:adv:crs:ETRS89_UTM32">
+   <gml:curveMember>
+    <gml:Curve>
+     <gml:segments>
+      <gml:LineStringSegment interpolation="linear">
+       <gml:posList count="2">0 0 1 1 0 0</gml:posList>
+      </gml:LineStringSegment>
+     </gml:segments>
+    </gml:Curve>
+   </gml:curveMember>
+   <gml:curveMember>
+    <gml:Curve>
+     <gml:segments>
+      <gml:LineStringSegment interpolation="linear">
+       <gml:posList count="2">1 1 2 2 1 1</gml:posList>
+      </gml:LineStringSegment>
+     </gml:segments>
+    </gml:Curve>
+   </gml:curveMember>
+  </gml:MultiCurve>
+ </ii:member>
+ <ii:member>
+  <gml:Surface gml:id="Surface" srsName="urn:adv:crs:ETRS89_UTM32">
+   <gml:patches>
+    <gml:PolygonPatch interpolation="planar">
+     <gml:exterior>
+      <gml:Ring>
+       <gml:curveMember>
+        <gml:Curve gml:id="s1c1">
+         <gml:segments>
+          <gml:LineStringSegment interpolation="linear">
+           <gml:posList count="2">0 0 1 0</gml:posList>
+          </gml:LineStringSegment>
+         </gml:segments>
+        </gml:Curve>
+       </gml:curveMember>
+       <gml:curveMember>
+        <gml:Curve gml:id="s1c2">
+         <gml:segments>
+          <gml:LineStringSegment interpolation="linear">
+           <gml:posList count="2">1 0 1 1</gml:posList>
+          </gml:LineStringSegment>
+         </gml:segments>
+        </gml:Curve>
+       </gml:curveMember>
+       <gml:curveMember>
+        <gml:Curve gml:id="s1c3">
+         <gml:segments>
+          <gml:LineStringSegment interpolation="linear">
+           <gml:posList count="2">1 1 0 1</gml:posList>
+          </gml:LineStringSegment>
+         </gml:segments>
+        </gml:Curve>
+       </gml:curveMember>
+       <gml:curveMember>
+        <gml:Curve gml:id="s1c4">
+         <gml:segments>
+          <gml:LineStringSegment interpolation="linear">
+           <gml:posList count="2">0 1 0 0</gml:posList>
+          </gml:LineStringSegment>
+         </gml:segments>
+        </gml:Curve>
+       </gml:curveMember>
+      </gml:Ring>
+     </gml:exterior>
+    </gml:PolygonPatch>
+   </gml:patches>
+  </gml:Surface>
+ </ii:member>
+</ii:GeometryCollection>
